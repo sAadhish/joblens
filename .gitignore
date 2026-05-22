@@ -1,0 +1,23 @@
+# Environment
+venv/
+.env
+*.env
+
+# API Keys — never commit these
+config.py
+secrets.py
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# Database files
+*.db
+resume_db/
+job_db/
+
+# Jupyter
+.ipynb_checkpoints
+
