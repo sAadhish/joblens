@@ -45,10 +45,3 @@ def store_jd(jd_text: str, company: str, structured: dict) -> str:
         return doc_id
     
 
-    Day 68 — Notes:
-1. What does modular code mean to me now — in my own words?
-using multiple part of codes and stream lining to a single project 
-2. What would break first if 100 JDs were added?
-nothing will break as long as the model can handle
-3. What's missing before this is production ready?
-single pipelined project code
