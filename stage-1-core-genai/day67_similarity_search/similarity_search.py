@@ -236,7 +236,8 @@ if all_matches:
         messages=[
             {
                 "role":"system",
-                "content":""" Your an expert career advisor . Given is a candidate profile and a job description ,  No explainations before or after . No markdown .Jsut raw JSON.
+                "content":""" Your an expert career advisor . Given is a candidate profile and a job description , 
+                  No explainations before or after . No markdown .Jsut raw JSON.
                 Use excatly this structure :
                 {
                 "matching_skills": ["skill1", "skill2"],
