@@ -20,6 +20,8 @@ def clean_text(text: str) ->str:
     text=re.sub(r"\n{3,}","\n\n",text)
     # Remove non-printable characters
     text = re.sub(r"[^\x20-\x7E\n]"," ",text)
+    # Remove PDF bullet artifacts
+    text = re.sub(r'\(cid:\d+\)', '', text)
 
     return text.strip()
 
@@ -70,7 +72,7 @@ def load_pdf(file_path : str) -> str:
             page_text = page.extract_text()
 
             if page_text:
-                full_text.append(f"[Page {page_num}]\n{page_text.strip()}")
+                full_text.append(page_text.strip())
 
             else:
                 print(f"[PDFLoader] Warning: Page {page_num} has no text "

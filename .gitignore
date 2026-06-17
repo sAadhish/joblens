@@ -21,3 +21,11 @@ job_db/
 # Jupyter
 .ipynb_checkpoints
 
+#cache
+cache/ 
+
+#logs
+logs/
+
+#chromadb
+chroma_db/

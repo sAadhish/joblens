@@ -130,3 +130,28 @@ Built by [Aadhish](https://linkedin.com/in/aadhish) — BI Developer transitioni
 This repository documents real learning — not polished tutorials. Every decision, every bug, every fix is here.
 
 GitHub: [github.com/sAadhish](https://github.com/sAadhish)
+
+
+
+
+------------------
+gen-ai-masterclass/          ← root project
+├── stage-1-core-genai/      ← already done ✅
+│   ├── day62_jd_analyzer/
+│   ├── day63_structured_output/
+│   ├── day64_embeddings/
+│   ├── day65_vector_db/
+│   ├── day66_metadata/
+│   ├── day67_similarity_search/
+│   ├── day68_unified_pipeline/
+│   └── README.md
+│
+├── stage-2-rag/             ← create this
+│   └── day73a_loaders/      ← loaders go here
+│       ├── loaders.py
+│       └── test_loaders.py
+│
+├── .env
+├── .gitignore
+├── requirements.txt
+└── README.md
