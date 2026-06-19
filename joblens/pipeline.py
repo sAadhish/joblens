@@ -46,7 +46,7 @@ def run_joblens(candidate_profile: str, job_data: list):
         print(f"{job["company"]}-{structured["one_line_summary"]}")
 
         stored_count += 1
-        print(f"{job["company"]} — {structured['one_line_summary']}")
+        #print(f"{job["company"]} — {structured['one_line_summary']}")
 
     logger.info(f"Processing complete — {stored_count}/{len(job_data)} JDs stored")
     
@@ -68,7 +68,7 @@ def run_joblens(candidate_profile: str, job_data: list):
     if not matches:
         print("No confident matches found")
         return 
-    
+     
     for i, match in enumerate(matches):
         confidence = "low confidence" if match.get("low_confidence") else ""
         print(f"  Rank {i+1}: {match['company']} — {match['role']}")
