@@ -2,7 +2,10 @@ import re
 import pdfplumber
 import urllib.request
 from pathlib import Path
-from joblens.logger import logger
+
+import sys, os
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+from logger import logger
 
 
 #Clean Text
@@ -33,28 +36,32 @@ def load_text_file(file_path: str) -> str:
 # Load pdf
 
 def load_pdf(file_path: str) -> str:
-    path=Path(file_path)
-
+    path = Path(file_path)
     if not path.exists():
-        raise FileNotFoundError(f"PDF not Found: {file_path}")
-    if path.suffix.lower()!= ".pdf":
-        raise ValueError(f"Expected .pdf file, got {path.suffix}")
-    
-    full_text=[]
+        raise FileNotFoundError(f"PDF not found: {file_path}")
+    if path.suffix.lower() != ".pdf":
+        raise ValueError(f"Expected .pdf file, got: {path.suffix}")
+
+    full_text = []
+
     with pdfplumber.open(file_path) as pdf:
         total_pages = len(pdf.pages)
 
-    for page_num,page in enumerate(pdf.pages,1):
-         page_text = page.extract_text()
+        for page_num, page in enumerate(pdf.pages, 1):
+            try:
+                page_text = page.extract_text()
+            except Exception as e:
+                logger.warning(f"PDFLoader: failed to extract page {page_num}: {e}")
+                continue
 
-         if page_text:
-             full_text.append(f"[Page {page_num}]\n{page_text.strip()}")
-         else :
-             logger.warning(f"PDFLoader: page {page_num} has no extractable text")
-    
+            if page_text:
+                full_text.append(f"[Page {page_num}]\n{page_text.strip()}")
+            else:
+                logger.warning(f"PDFLoader: page {page_num} has no extractable text")
+
     if not full_text:
-        raise ValueError("No text extracted — PDF may be entirely scanned images")
-    
+        raise ValueError("No text extracted — PDF may be entirely scanned images or unparseable")
+
     raw_text = "\n\n".join(full_text)
     cleaned = clean_text(raw_text)
     logger.info(f"PDFLoader extracted {len(cleaned)} characters "
