@@ -1,7 +1,3 @@
-# ===================================
-# RAG — Retrieval Augmented Generation
-# Connects ingestion → embedding → storage → retrieval → generation
-# ===================================
 
 '''
 INDEX (once per document)
@@ -23,6 +19,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from config import embedding_model, rag_collection, groq_client
 from logger import logger
 from ingestion import load_document, chunk_document
+from reranker import rerank_chunks
 
 # STEP 1 — INDEX
 
@@ -151,23 +148,34 @@ def generate_answer(question :str ,context:str) ->str:
 #single entry for the whole rag pipe line
 def rag_query(
     question: str,
-    top_k: int = 3,
+    retrieve_k: int =10,
+    final_k: int = 3,
     source_label: str = None,
-    min_similarity: float = 0.3
+    min_similarity: float = 0.3,
+    use_reranking:bool =True
 ) -> dict:
+    
+    # Stage 1 — Bi-encoder retrieval (wide net)
     chunks = retrieve_chunks(question, 
-                             top_k=top_k,
+                             top_k=retrieve_k,
                              source_label=source_label,
                              min_similarity=min_similarity)
   
     if not chunks:
-      logger.warning(f"No relevent chunks were found for question : {question}")
+      logger.warning(f"No relevant chunks were found for question : {question}")
       return {
           "answers":"I dont have enough information to answer this",
           "sources":[],
           "chunks_used":0
       }
     
+     # Stage 2 — Cross-encoder reranking (precision)
+    if use_reranking:
+        chunks = rerank_chunks(question, chunks, top_k=final_k)
+    else:
+        chunks=chunks[:final_k]
+
+
     context=build_context(chunks)
     answer=generate_answer(question,context)
     sources = list({c["source_label"] for c in chunks})

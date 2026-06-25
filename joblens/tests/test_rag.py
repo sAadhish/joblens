@@ -51,6 +51,11 @@ print("=" * 55)
 print("STEP 2 — Asking real questions")
 print("=" * 55)
 
+#######temp
+from config import rag_collection
+
+print(rag_collection.count())
+##########
 questions = [
     "What does the Sarvam AI Backend Engineer role require?",
     "Does Sarvam AI offer remote work?",
