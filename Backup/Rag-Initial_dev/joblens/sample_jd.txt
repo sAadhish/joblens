@@ -1,0 +1,15 @@
+Sarvam AI is looking for a Backend Engineer.
+
+Requirements:
+Strong Python and FastAPI experience is mandatory.
+Must know gRPC and PostgreSQL deeply.
+Docker and Kubernetes experience required.
+Minimum 3 years of backend engineering experience.
+
+Nice to Have:
+Experience with Redis or Kafka.
+Cloud experience on AWS or GCP.
+
+About the Company:
+Sarvam AI is building AI for India.
+We work on speech, language, and multimodal AI systems.

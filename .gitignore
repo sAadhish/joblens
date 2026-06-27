@@ -25,7 +25,10 @@ job_db/
 cache/ 
 
 #logs
-logs/
+#logs/
 
 #chromadb
 chroma_db/
+
+#Backup
+Backup/

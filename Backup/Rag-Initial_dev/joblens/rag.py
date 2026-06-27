@@ -126,29 +126,20 @@ def generate_answer(question :str ,context:str) ->str:
       model="llama-3.3-70b-versatile",
       temperature=0,
       messages=[
-            {
-                "role": "system",
-                "content": """You are a career advisor for tech professionals in India.
+          {
+              "role":"system",
+              "content":""" You are a career advisor for texh professionals in India.
+              Answer the users questions with only the documents provided below.
+              if the answer is not in the document , say excatly this :" i dont have enough information to answer this "
+              do not use general knowledge. Donot hallucinate , dont guess . Only use whats provided
+              Cite which source(s) you used in your answer , like [source 1]."""
+          },
+          {
+              "role":"user",
+              "content": f"DOCUMENTS:\n{context}\n\nQUESTION:\n{question}"
+          }
 
-Answer the user's question using ONLY the information in the documents provided below.
-
-Rules:
-1. If the documents fully answer the question, give a clear, direct answer.
-2. If the documents only partially answer it, answer what you can and explicitly 
-   state what information is missing — do not guess or fill gaps with general knowledge.
-3. If multiple sources contain relevant pieces, synthesize them into one coherent 
-   answer rather than listing them separately.
-4. If the answer is not in the documents at all, say exactly: 
-   "I don't have enough information to answer that."
-5. Never use general training knowledge. Only use what's provided below.
-6. Cite which source(s) you used, like [Source 1], at the end of relevant sentences."""
-            },
-            {
-                "role": "user",
-                "content": f"DOCUMENTS:\n{context}\n\nQUESTION:\n{question}"
-            }
-        ]
-    
+      ]
   )
   return response.choices[0].message.content
 
@@ -157,34 +148,23 @@ Rules:
 #single entry for the whole rag pipe line
 def rag_query(
     question: str,
-    retrieve_k: int =10,
-    final_k: int = 3,
+    top_k: int = 3,
     source_label: str = None,
-    min_similarity: float = 0.3,
-    use_reranking:bool =True
+    min_similarity: float = 0.3
 ) -> dict:
-    
-    # Stage 1 — Bi-encoder retrieval (wide net)
     chunks = retrieve_chunks(question, 
-                             top_k=retrieve_k,
+                             top_k=top_k,
                              source_label=source_label,
                              min_similarity=min_similarity)
   
     if not chunks:
-      logger.warning(f"No relevant chunks were found for question : {question}")
+      logger.warning(f"No relevent chunks were found for question : {question}")
       return {
           "answers":"I dont have enough information to answer this",
           "sources":[],
           "chunks_used":0
       }
     
-     # Stage 2 — Cross-encoder reranking (precision)
-    if use_reranking:
-        chunks = rerank_chunks(question, chunks, top_k=final_k)
-    else:
-        chunks=chunks[:final_k]
-
-
     context=build_context(chunks)
     answer=generate_answer(question,context)
     sources = list({c["source_label"] for c in chunks})
@@ -192,7 +172,7 @@ def rag_query(
     logger.info(f"RAG query answered using {len(chunks)} chunks from {sources}")
     
     return {
-        "answer": answer,
+        "answers": answer,
         "sources": sources,
         "chunks_used": len(chunks)
     }

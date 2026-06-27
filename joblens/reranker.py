@@ -19,8 +19,8 @@ def rerank_chunks(
         return []
     
     model=_get_reranker()
-    pairs = [[question,chunk["Text"]] for chunk in chunks]
-    scores = model.predit(pairs)
+    pairs = [[question,chunk["text"]] for chunk in chunks]
+    scores = model.predict(pairs)
 
     for chunk,score in zip(chunks,scores):
         chunk["rerank_score"]=float(score)
