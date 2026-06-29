@@ -8,7 +8,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from rag import rag_query, retrieve_chunks
 from reranker import rerank_chunks
-'''
+
 
 # -------------------------------------------------------
 # Test 1 — Compare retrieval order BEFORE vs AFTER reranking
@@ -70,7 +70,6 @@ print(f"A: {result['answer']}")
 print("\n(Check: does the answer explicitly say salary info is missing,")
 print(" instead of just ignoring that part of the question?)")
 
-'''
 # -------------------------------------------------------
 # Test 4 — With vs without reranking, side by side
 # -------------------------------------------------------

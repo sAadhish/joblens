@@ -112,6 +112,8 @@ def retrieve_chunks(
 
 
 # STEP 3 — GENERATE
+
+# Build context
 def build_context(chunks :list[dict])->str:
     if not chunks:
         return ""
@@ -121,6 +123,7 @@ def build_context(chunks :list[dict])->str:
         parts.append(f"[Source {i}: {chunk['source_label']}]\n{chunk["text"]}")
     return "\n\n".join(parts)
 
+#generate answer from llm
 def generate_answer(question :str ,context:str) ->str:
   response = groq_client.chat.completions.create(
       model="llama-3.3-70b-versatile",
@@ -196,3 +199,106 @@ def rag_query(
         "sources": sources,
         "chunks_used": len(chunks)
     }
+
+
+
+##### Multi-Document Retrieval #####
+
+#retrive from each label
+def retrieve_multi_source(
+        question : str,
+        source_label: list[str],
+        per_source_k: int = 2,
+        min_similarity:float = 0.3
+)-> dict[str, list[dict]]:
+        results={}
+        for label in source_label:
+            chunks=retrieve_chunks(question=question,
+                                   source_label=label,
+                                   top_k=per_source_k,
+                                   min_similarity=min_similarity)
+            results[label] = chunks
+            logger.info(f"Multi-source retrieval: {len(chunks)} chunks from {label}")
+
+        return results
+
+
+# contex for llm
+def build_multi_source_context(grouped : dict[str,list[dict]]):
+    sections=[]
+
+    for label, chunks in grouped.items():
+        if not chunks :
+            sections.append(f"======={label}===\n(No relevant information found)")
+            continue
+
+        chunk_texts="\n".join(c["text"] for c in chunks)
+        sections.append(f"=== {label} ===\n{chunk_texts}")
+
+    return "\n\n".join(sections)
+
+#generate answer from llm
+def generate_comparison_answer(
+        question : str,
+        context : str,
+        source_label : list[str]
+) -> dict:
+    response = groq_client.chat.completions.create(
+        model="llama-3.3-70b-versatile",
+        temperature=0,
+        messages=[
+            {
+                "role": "system",
+                "content": f"""You are a career advisor comparing multiple job opportunities 
+for a candidate in India.
+
+The documents below are organized into clearly labeled sections, one per source: 
+{', '.join(source_label)}.
+
+Rules:
+1. Address EVERY source listed, even briefly — never skip one entirely.
+2. If a source has no relevant information, explicitly say so for that source 
+   rather than omitting it.
+3. Use ONLY the information in the documents. Never use general knowledge.
+4. Structure your answer clearly — one short section per source, then a final 
+   recommendation if asked.
+5. Cite sources by their section name."""
+            },
+            {
+                "role": "user",
+                "content": f"DOCUMENTS:\n{context}\n\nQUESTION:\n{question}"
+            }
+        ]
+    )
+
+    return response.choices[0].message.content
+        
+
+#single pipeline
+def compare_sources(
+        question :str ,
+        source_label : list[str],
+        per_source_k: int =2
+) -> dict :
+    
+    
+    grouped = retrieve_multi_source(question, source_label, per_source_k=per_source_k)
+
+    total_chunk=sum(len(v) for v in grouped.values())
+    if total_chunk == 0:
+        return {
+            "answers": "I don't have enough information to answer that.",
+            "sources": [],
+            "chunks_used": 0
+        }
+    
+    context = build_multi_source_context(grouped)
+    answer = generate_comparison_answer(question, context, source_label)
+
+    return{
+        "answers" : answer,
+        "sources" : [label for label, chunks in grouped.items() if chunks],
+        "chunks_used":total_chunk
+
+    }
+

@@ -1,0 +1,15 @@
+2026-06-28 15:16:53,590 | INFO | loaders | Text Loader Extracted 289 characters from /Users/aadhishs/gen ai masterclass/joblens/tests/../haptik_jd.txt
+2026-06-28 15:16:53,590 | INFO | chunkers | Paragraph chunking produced 3 chunks
+2026-06-28 15:16:54,099 | INFO | rag | Indexed 3/3 chunks for Haptik JD
+2026-06-28 15:18:55,388 | INFO | loaders | Text Loader Extracted 289 characters from /Users/aadhishs/gen ai masterclass/joblens/tests/../haptik_jd.txt
+2026-06-28 15:18:55,388 | INFO | chunkers | Paragraph chunking produced 3 chunks
+2026-06-28 15:18:55,752 | INFO | rag | Indexed 3/3 chunks for Haptik JD
+2026-06-28 15:18:56,102 | INFO | rag | Multi-source retrieval: 2 chunks from Sarvam AI JD
+2026-06-28 15:18:56,112 | INFO | rag | Multi-source retrieval: 2 chunks from Haptik JD
+2026-06-28 15:18:57,070 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-28 15:19:58,454 | INFO | loaders | Text Loader Extracted 289 characters from /Users/aadhishs/gen ai masterclass/joblens/tests/../haptik_jd.txt
+2026-06-28 15:19:58,455 | INFO | chunkers | Paragraph chunking produced 3 chunks
+2026-06-28 15:19:58,810 | INFO | rag | Indexed 3/3 chunks for Haptik JD
+2026-06-28 15:19:58,846 | INFO | rag | Multi-source retrieval: 2 chunks from Sarvam AI JD
+2026-06-28 15:19:58,856 | INFO | rag | Multi-source retrieval: 2 chunks from Haptik JD
+2026-06-28 15:19:59,866 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
