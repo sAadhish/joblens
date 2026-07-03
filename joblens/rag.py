@@ -278,11 +278,17 @@ Rules:
 def compare_sources(
         question :str ,
         source_label : list[str],
-        per_source_k: int =2
+        min_similarity : float,
+        per_source_k: int =2,
+        include_resume: bool = True,
+        resume_label: str = "My Resume",
+        
 ) -> dict :
     
-    
-    grouped = retrieve_multi_source(question, source_label, per_source_k=per_source_k)
+    if include_resume and resume_label not in source_label:
+        source_label = source_label + [resume_label]
+        
+    grouped = retrieve_multi_source(question, source_label, per_source_k=per_source_k,min_similarity=min_similarity)
 
     total_chunk=sum(len(v) for v in grouped.values())
     if total_chunk == 0:
@@ -301,4 +307,3 @@ def compare_sources(
         "chunks_used":total_chunk
 
     }
-
