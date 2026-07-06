@@ -6,8 +6,8 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from rag import rag_query, retrieve_chunks
-from reranker import rerank_chunks
+from stage2_rag.rag import rag_query, retrieve_chunks
+from stage2_rag.reranker import rerank_chunks
 
 
 # -------------------------------------------------------

@@ -5,7 +5,7 @@
 import os,sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from ingestion import load_document, chunk_document
+from stage2_rag.ingestion import load_document, chunk_document
 
 
 def test_load_and_chunk_text():

@@ -6,7 +6,7 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from rag import index_document, rag_query
+from stage2_rag.rag import index_document, rag_query
 
 
 print("=" * 55)

@@ -3,8 +3,8 @@
 # Connects Stage 1 matching to Stage 2 RAG
 # ===================================
 
-from rag import rag_query, compare_sources
-from profile_matcher import match_profile
+from stage2_rag.rag import rag_query, compare_sources
+from stage1_matching.profile_matcher import match_profile
 from logger import logger
 
 

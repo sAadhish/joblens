@@ -1,4 +1,9 @@
-from pipeline import run_joblens
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "stage1_matching"))
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "stage2_rag"))
+
+
+from stage1_matching.pipeline import run_joblens
 
 if __name__ == "__main__":
     

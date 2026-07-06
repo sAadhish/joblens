@@ -1,7 +1,9 @@
+import sys, os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import embedding_model, collection
 import hashlib
 from logger import logger
-from rag import index_document #for connecting to rag
+from stage2_rag.rag import index_document #for connecting to rag
 import tempfile #for connecting to rag
 import os
 

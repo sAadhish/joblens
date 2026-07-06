@@ -1,7 +1,7 @@
 import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from rag import index_document, compare_sources
+from stage2_rag.rag import index_document, compare_sources
 
 # Index a second JD for real comparison
 haptik_jd_path = os.path.join(os.path.dirname(__file__), "..", "haptik_jd.txt")

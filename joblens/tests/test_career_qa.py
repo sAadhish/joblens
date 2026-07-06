@@ -1,7 +1,7 @@
 import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from career_qa import ask_about_match, compare_my_top_matches
+from stage2_rag.career_qa import ask_about_match, compare_my_top_matches
 
 candidate_profile = """
 1 year experience as BI Developer and Data Analyst.
