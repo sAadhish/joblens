@@ -1,0 +1,431 @@
+{
+  "timestamp": "2026-07-14T10:32:11.432399",
+  "total_questions": 13,
+  "scores": {
+    "hit_rate": 1.0,
+    "mrr": 0.84,
+    "precision_at_k": 0.715,
+    "answer_quality": 1.0,
+    "faithfulness": 0.846,
+    "overall": 0.846
+  },
+  "by_category": {
+    "factual_retrieval": 0.6,
+    "grounding_check": 1.0,
+    "resume_retrieval": 1.0,
+    "hard_negative": 1.0
+  },
+  "results": [
+    {
+      "eval_id": "eval_001",
+      "category": "factual_retrieval",
+      "question": "What Python frameworks does the Sarvam AI role require?",
+      "answer": "The Sarvam AI role requires experience with FastAPI, a Python framework [Source 3: Sarvam AI JD].",
+      "retrieval": {
+        "eval_id": "eval_001",
+        "metric": "retrieval",
+        "passed": true,
+        "hit_rate": 1,
+        "mrr": 0.333,
+        "precision_at_k": 0.4,
+        "first_relevant_rank": 3,
+        "total_chunks_retrieved": 5
+      },
+      "answer_quality": {
+        "eval_id": "eval_001",
+        "metric": "answer_quality",
+        "passed": true,
+        "method": "keyword_match",
+        "answer_preview": "The Sarvam AI role requires experience with FastAPI, a Python framework [Source 3: Sarvam AI JD]."
+      },
+      "faithfulness": {
+        "metric": "faithfulness",
+        "score": 1.0,
+        "passed": true,
+        "verdict": "FAITHFUL",
+        "unsupported_claims": "None",
+        "reason": "The answer only states that the Sarvam AI role requires experience with FastAPI, a Python framework, which is supported by the context."
+      },
+      "overall_pass": true
+    },
+    {
+      "eval_id": "eval_002",
+      "category": "factual_retrieval",
+      "question": "How many years of experience does the Sarvam AI role need?",
+      "answer": "The Sarvam AI role requires a minimum of 3 years of backend engineering experience [Source 3: Sarvam AI JD].",
+      "retrieval": {
+        "eval_id": "eval_002",
+        "metric": "retrieval",
+        "passed": true,
+        "hit_rate": 1,
+        "mrr": 0.333,
+        "precision_at_k": 0.4,
+        "first_relevant_rank": 3,
+        "total_chunks_retrieved": 5
+      },
+      "answer_quality": {
+        "eval_id": "eval_002",
+        "metric": "answer_quality",
+        "passed": true,
+        "method": "keyword_match",
+        "answer_preview": "The Sarvam AI role requires a minimum of 3 years of backend engineering experience [Source 3: Sarvam AI JD]."
+      },
+      "faithfulness": {
+        "metric": "faithfulness",
+        "score": 1.0,
+        "passed": true,
+        "verdict": "FAITHFUL",
+        "unsupported_claims": "None",
+        "reason": "The answer statement about the minimum years of backend engineering experience required is directly supported by the provided context."
+      },
+      "overall_pass": true
+    },
+    {
+      "eval_id": "eval_003",
+      "category": "factual_retrieval",
+      "question": "What database tools does the Razorpay Data Engineer role require?",
+      "answer": "The Razorpay Data Engineer role requires the following database tools: SQL, Snowflake, and dbt [Source 1: Razorpay JD].",
+      "retrieval": {
+        "eval_id": "eval_003",
+        "metric": "retrieval",
+        "passed": true,
+        "hit_rate": 1,
+        "mrr": 1.0,
+        "precision_at_k": 1.0,
+        "first_relevant_rank": 1,
+        "total_chunks_retrieved": 1
+      },
+      "answer_quality": {
+        "eval_id": "eval_003",
+        "metric": "answer_quality",
+        "passed": true,
+        "method": "keyword_match",
+        "answer_preview": "The Razorpay Data Engineer role requires the following database tools: SQL, Snowflake, and dbt [Source 1: Razorpay JD]."
+      },
+      "faithfulness": {
+        "metric": "faithfulness",
+        "score": 0.0,
+        "passed": false,
+        "verdict": "UNFAITHFUL",
+        "unsupported_claims": "The Razorpay Data Engineer role, database tools required by Razorpay",
+        "reason": "The answer introduces specific facts about \"Razorpay Data Engineer role\" and its requirements, which are not present in the provided context."
+      },
+      "overall_pass": false
+    },
+    {
+      "eval_id": "eval_004",
+      "category": "factual_retrieval",
+      "question": "Does the Haptik role require RAG experience?",
+      "answer": "No, the Haptik role does not require RAG experience, but it is considered a strong plus [Source 1: Haptik JD].",
+      "retrieval": {
+        "eval_id": "eval_004",
+        "metric": "retrieval",
+        "passed": true,
+        "hit_rate": 1,
+        "mrr": 1.0,
+        "precision_at_k": 0.5,
+        "first_relevant_rank": 1,
+        "total_chunks_retrieved": 4
+      },
+      "answer_quality": {
+        "eval_id": "eval_004",
+        "metric": "answer_quality",
+        "passed": true,
+        "method": "keyword_match",
+        "answer_preview": "No, the Haptik role does not require RAG experience, but it is considered a strong plus [Source 1: Haptik JD]."
+      },
+      "faithfulness": {
+        "metric": "faithfulness",
+        "score": 1.0,
+        "passed": true,
+        "verdict": "FAITHFUL",
+        "unsupported_claims": "None",
+        "reason": "The answer statement that \"the Haptik role does not require RAG experience, but it is considered a strong plus\" is supported by the context, which states \"RAG system experience is a strong plus\" under requirements, implying it is not required but preferred."
+      },
+      "overall_pass": true
+    },
+    {
+      "eval_id": "eval_005",
+      "category": "factual_retrieval",
+      "question": "What workflow tool does the Razorpay role mention?",
+      "answer": "The workflow tool mentioned in the Razorpay role is Apache Airflow [Source 1: Razorpay JD].",
+      "retrieval": {
+        "eval_id": "eval_005",
+        "metric": "retrieval",
+        "passed": true,
+        "hit_rate": 1,
+        "mrr": 1.0,
+        "precision_at_k": 1.0,
+        "first_relevant_rank": 1,
+        "total_chunks_retrieved": 1
+      },
+      "answer_quality": {
+        "eval_id": "eval_005",
+        "metric": "answer_quality",
+        "passed": true,
+        "method": "keyword_match",
+        "answer_preview": "The workflow tool mentioned in the Razorpay role is Apache Airflow [Source 1: Razorpay JD]."
+      },
+      "faithfulness": {
+        "metric": "faithfulness",
+        "score": 0.0,
+        "passed": false,
+        "verdict": "UNFAITHFUL",
+        "unsupported_claims": "The workflow tool mentioned in the Razorpay role is Apache Airflow",
+        "reason": "The answer introduces the term \"Razorpay role\" which is not present in the context, adding a specific fact beyond what the context contains."
+      },
+      "overall_pass": false
+    },
+    {
+      "eval_id": "eval_006",
+      "category": "grounding_check",
+      "question": "What is the salary for the Sarvam AI role?",
+      "answer": "I don't have enough information to answer that. [Source 1, Source 2, Source 3]",
+      "retrieval": {
+        "eval_id": "eval_006",
+        "metric": "retrieval",
+        "passed": true,
+        "hit_rate": 1,
+        "mrr": 1.0,
+        "precision_at_k": 1.0,
+        "first_relevant_rank": 1,
+        "total_chunks_retrieved": 5
+      },
+      "answer_quality": {
+        "eval_id": "eval_006",
+        "metric": "grounding",
+        "passed": true,
+        "correctly_refused": true,
+        "answer_preview": "I don't have enough information to answer that. [Source 1, Source 2, Source 3]"
+      },
+      "faithfulness": {
+        "metric": "faithfulness",
+        "score": 1.0,
+        "passed": true,
+        "verdict": "FAITHFUL",
+        "reason": "Answer correctly refused \u2014 no claims to evaluate"
+      },
+      "overall_pass": true
+    },
+    {
+      "eval_id": "eval_007",
+      "category": "grounding_check",
+      "question": "Does Freshworks offer health insurance?",
+      "answer": "I don't have enough information to answer that. [Source 1: Freshworks JD]",
+      "retrieval": {
+        "eval_id": "eval_007",
+        "metric": "retrieval",
+        "passed": true,
+        "hit_rate": 1,
+        "mrr": 1.0,
+        "precision_at_k": 1.0,
+        "first_relevant_rank": 1,
+        "total_chunks_retrieved": 1
+      },
+      "answer_quality": {
+        "eval_id": "eval_007",
+        "metric": "grounding",
+        "passed": true,
+        "correctly_refused": true,
+        "answer_preview": "I don't have enough information to answer that. [Source 1: Freshworks JD]"
+      },
+      "faithfulness": {
+        "metric": "faithfulness",
+        "score": 1.0,
+        "passed": true,
+        "verdict": "FAITHFUL",
+        "reason": "Answer correctly refused \u2014 no claims to evaluate"
+      },
+      "overall_pass": true
+    },
+    {
+      "eval_id": "eval_008",
+      "category": "resume_retrieval",
+      "question": "What BI tools has the candidate used?",
+      "answer": "The candidate has used the following BI tools: Qlik Sense, Power BI, and Tableau [Source 1: My Resume, Page 2]. They have also specifically developed and deployed production-ready BI applications in Qlik Sense [Source 2: My Resume, Page 1] and [Source 3: My Resume].",
+      "retrieval": {
+        "eval_id": "eval_008",
+        "metric": "retrieval",
+        "passed": true,
+        "hit_rate": 1,
+        "mrr": 0.25,
+        "precision_at_k": 0.2,
+        "first_relevant_rank": 4,
+        "total_chunks_retrieved": 5
+      },
+      "answer_quality": {
+        "eval_id": "eval_008",
+        "metric": "answer_quality",
+        "passed": true,
+        "method": "keyword_match",
+        "answer_preview": "The candidate has used the following BI tools: Qlik Sense, Power BI, and Tableau [Source 1: My Resume, Page 2]. They have also specifically developed "
+      },
+      "faithfulness": {
+        "metric": "faithfulness",
+        "score": 1.0,
+        "passed": true,
+        "verdict": "FAITHFUL",
+        "unsupported_claims": "None",
+        "reason": "The answer only states facts that can be found in the provided context, specifically mentioning the candidate's use of BI tools such as Qlik Sense, Power BI, and Tableau, which are listed on Page 2 of the context."
+      },
+      "overall_pass": true
+    },
+    {
+      "eval_id": "eval_009",
+      "category": "resume_retrieval",
+      "question": "What cloud platforms has the candidate worked with?",
+      "answer": "The candidate has worked with Amazon Web Services (AWS) cloud platform, specifically with services such as EC2, RDS, S3, and CloudWatch [Source 1, Source 2].",
+      "retrieval": {
+        "eval_id": "eval_009",
+        "metric": "retrieval",
+        "passed": true,
+        "hit_rate": 1,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "first_relevant_rank": 1,
+        "total_chunks_retrieved": 5
+      },
+      "answer_quality": {
+        "eval_id": "eval_009",
+        "metric": "answer_quality",
+        "passed": true,
+        "method": "keyword_match",
+        "answer_preview": "The candidate has worked with Amazon Web Services (AWS) cloud platform, specifically with services such as EC2, RDS, S3, and CloudWatch [Source 1, Sou"
+      },
+      "faithfulness": {
+        "metric": "faithfulness",
+        "score": 1.0,
+        "passed": true,
+        "verdict": "FAITHFUL",
+        "unsupported_claims": "None",
+        "reason": "The answer statement about the candidate working with Amazon Web Services (AWS) cloud platform, specifically with services such as EC2, RDS, S3, and CloudWatch, is supported by the context."
+      },
+      "overall_pass": true
+    },
+    {
+      "eval_id": "eval_010",
+      "category": "hard_negative",
+      "question": "Does the Sarvam AI role require Django experience?",
+      "answer": "I don't have enough information to answer that. [Source 1: Sarvam AI JD], [Source 2: Sarvam AI JD], [Source 3: Sarvam AI JD]",
+      "retrieval": {
+        "eval_id": "eval_010",
+        "metric": "retrieval",
+        "passed": true,
+        "hit_rate": 1,
+        "mrr": 1.0,
+        "precision_at_k": 1.0,
+        "first_relevant_rank": 1,
+        "total_chunks_retrieved": 5
+      },
+      "answer_quality": {
+        "eval_id": "eval_010",
+        "metric": "grounding",
+        "passed": true,
+        "correctly_refused": true,
+        "answer_preview": "I don't have enough information to answer that. [Source 1: Sarvam AI JD], [Source 2: Sarvam AI JD], [Source 3: Sarvam AI JD]"
+      },
+      "faithfulness": {
+        "metric": "faithfulness",
+        "score": 1.0,
+        "passed": true,
+        "verdict": "FAITHFUL",
+        "reason": "Answer correctly refused \u2014 no claims to evaluate"
+      },
+      "overall_pass": true
+    },
+    {
+      "eval_id": "eval_011",
+      "category": "hard_negative",
+      "question": "What is the notice period for the Freshworks Data Analyst role?",
+      "answer": "I don't have enough information to answer that. [Source 1: Freshworks JD]",
+      "retrieval": {
+        "eval_id": "eval_011",
+        "metric": "retrieval",
+        "passed": true,
+        "hit_rate": 1,
+        "mrr": 1.0,
+        "precision_at_k": 1.0,
+        "first_relevant_rank": 1,
+        "total_chunks_retrieved": 1
+      },
+      "answer_quality": {
+        "eval_id": "eval_011",
+        "metric": "grounding",
+        "passed": true,
+        "correctly_refused": true,
+        "answer_preview": "I don't have enough information to answer that. [Source 1: Freshworks JD]"
+      },
+      "faithfulness": {
+        "metric": "faithfulness",
+        "score": 1.0,
+        "passed": true,
+        "verdict": "FAITHFUL",
+        "reason": "Answer correctly refused \u2014 no claims to evaluate"
+      },
+      "overall_pass": true
+    },
+    {
+      "eval_id": "eval_012",
+      "category": "hard_negative",
+      "question": "Does the Razorpay role require Kubernetes?",
+      "answer": "I don't have enough information to answer that. [Source 1: Razorpay JD]",
+      "retrieval": {
+        "eval_id": "eval_012",
+        "metric": "retrieval",
+        "passed": true,
+        "hit_rate": 1,
+        "mrr": 1.0,
+        "precision_at_k": 1.0,
+        "first_relevant_rank": 1,
+        "total_chunks_retrieved": 1
+      },
+      "answer_quality": {
+        "eval_id": "eval_012",
+        "metric": "grounding",
+        "passed": true,
+        "correctly_refused": true,
+        "answer_preview": "I don't have enough information to answer that. [Source 1: Razorpay JD]"
+      },
+      "faithfulness": {
+        "metric": "faithfulness",
+        "score": 1.0,
+        "passed": true,
+        "verdict": "FAITHFUL",
+        "reason": "Answer correctly refused \u2014 no claims to evaluate"
+      },
+      "overall_pass": true
+    },
+    {
+      "eval_id": "eval_013",
+      "category": "resume_retrieval",
+      "question": "How many Qlik Sense applications has the candidate built?",
+      "answer": "The candidate has built at least 2 complete Qlik Sense applications from scratch, specifically the Channel Management App and the Quarterly Review App [Source 1].",
+      "retrieval": {
+        "eval_id": "eval_013",
+        "metric": "retrieval",
+        "passed": true,
+        "hit_rate": 1,
+        "mrr": 1.0,
+        "precision_at_k": 0.6,
+        "first_relevant_rank": 1,
+        "total_chunks_retrieved": 5
+      },
+      "answer_quality": {
+        "eval_id": "eval_013",
+        "metric": "answer_quality",
+        "passed": true,
+        "method": "keyword_match",
+        "answer_preview": "The candidate has built at least 2 complete Qlik Sense applications from scratch, specifically the Channel Management App and the Quarterly Review App"
+      },
+      "faithfulness": {
+        "metric": "faithfulness",
+        "score": 1.0,
+        "passed": true,
+        "verdict": "FAITHFUL",
+        "unsupported_claims": "None",
+        "reason": "The answer statement accurately reflects the information provided in the context, specifically that the candidate built two complete Qlik Sense applications from scratch, the Channel Management App and the Quarterly Review App."
+      },
+      "overall_pass": true
+    }
+  ]
+}

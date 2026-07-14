@@ -84,3 +84,14 @@ def hybrid_search(
 
    logger.info(f"Hybrid search ranked {len(combined)} chunks, returning top {top_k}")
    return combined[:top_k]
+
+
+
+# there is a gap in our learning , as of now we are taking all document from chromadb , 
+# later stage we will use Reciprocal Rank Fusion (RRF) 
+# Skip integrating our BM25 hybrid, note it as a known gap,
+#           and learn proper hybrid search in Stage 6 with Elasticsearch
+ #          or use a vector DB that supports hybrid natively (Weaviate)
+  # ✅ Production-correct approach
+  # ✅ Honest about what we built vs what production needs
+   #✅ Gives you a real, defensible interview answer

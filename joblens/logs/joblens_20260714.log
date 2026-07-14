@@ -1,0 +1,172 @@
+2026-07-14 10:23:42,489 | INFO | reranker | Loading cross-encoder reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-07-14 10:23:42,490 | INFO | model | No device provided, using mps
+2026-07-14 10:23:43,003 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:43,515 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 404 Not Found"
+2026-07-14 10:23:43,518 | INFO | model | No modules.json found for cross-encoder/ms-marco-MiniLM-L-6-v2, initializing a new CrossEncoder model.
+2026-07-14 10:23:43,786 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:44,057 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-07-14 10:23:44,539 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:44,949 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:44,995 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+2026-07-14 10:23:45,358 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/adapter_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:45,665 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-07-14 10:23:46,178 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:46,454 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:46,516 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+2026-07-14 10:23:46,876 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/processor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:47,303 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-07-14 10:23:47,572 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:47,856 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-14 10:23:48,225 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:48,636 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-14 10:23:49,020 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:49,352 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-14 10:23:49,762 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:50,172 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:50,236 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-14 10:23:50,684 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:51,298 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:51,356 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+2026-07-14 10:23:51,913 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:52,322 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:52,397 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+2026-07-14 10:23:52,698 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:53,039 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:53,113 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-14 10:23:53,551 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:53,858 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-14 10:23:54,165 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:23:54,577 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-14 10:23:54,866 | INFO | reranker | Ranked 5 chunks down to top 3
+2026-07-14 10:23:55,521 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:23:55,547 | INFO | rag | RAG query answered using 3 chunks from ['Sarvam AI JD']
+2026-07-14 10:23:56,110 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:23:56,225 | INFO | reranker | Ranked 5 chunks down to top 3
+2026-07-14 10:23:56,622 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:23:56,623 | INFO | rag | RAG query answered using 3 chunks from ['Sarvam AI JD']
+2026-07-14 10:23:57,239 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:23:57,317 | INFO | reranker | Ranked 1 chunks down to top 3
+2026-07-14 10:23:57,749 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:23:57,752 | INFO | rag | RAG query answered using 1 chunks from ['Razorpay JD']
+2026-07-14 10:23:58,364 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:23:58,485 | INFO | reranker | Ranked 4 chunks down to top 3
+2026-07-14 10:23:58,978 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:23:58,980 | INFO | rag | RAG query answered using 3 chunks from ['Haptik JD']
+2026-07-14 10:23:59,592 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:23:59,693 | INFO | reranker | Ranked 1 chunks down to top 3
+2026-07-14 10:24:00,104 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:24:00,107 | INFO | rag | RAG query answered using 1 chunks from ['Razorpay JD']
+2026-07-14 10:24:00,716 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:24:00,812 | INFO | reranker | Ranked 5 chunks down to top 3
+2026-07-14 10:24:01,231 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:24:01,233 | INFO | rag | RAG query answered using 3 chunks from ['Sarvam AI JD']
+2026-07-14 10:24:01,360 | INFO | reranker | Ranked 1 chunks down to top 3
+2026-07-14 10:24:01,584 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:24:01,587 | INFO | rag | RAG query answered using 1 chunks from ['Freshworks JD']
+2026-07-14 10:24:01,817 | INFO | reranker | Ranked 6 chunks down to top 3
+2026-07-14 10:24:02,357 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:24:02,359 | INFO | rag | RAG query answered using 3 chunks from ['My Resume']
+2026-07-14 10:24:02,972 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:24:03,155 | INFO | reranker | Ranked 6 chunks down to top 3
+2026-07-14 10:24:03,584 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:24:03,586 | INFO | rag | RAG query answered using 3 chunks from ['My Resume']
+2026-07-14 10:24:04,303 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:24:04,358 | INFO | reranker | Ranked 5 chunks down to top 3
+2026-07-14 10:24:04,711 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:24:04,711 | INFO | rag | RAG query answered using 3 chunks from ['Sarvam AI JD']
+2026-07-14 10:24:04,789 | INFO | reranker | Ranked 1 chunks down to top 3
+2026-07-14 10:24:04,984 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:24:04,985 | INFO | rag | RAG query answered using 1 chunks from ['Freshworks JD']
+2026-07-14 10:24:05,050 | INFO | reranker | Ranked 1 chunks down to top 3
+2026-07-14 10:24:05,358 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:24:05,359 | INFO | rag | RAG query answered using 1 chunks from ['Razorpay JD']
+2026-07-14 10:24:05,567 | INFO | reranker | Ranked 6 chunks down to top 3
+2026-07-14 10:24:06,016 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:24:06,017 | INFO | rag | RAG query answered using 3 chunks from ['My Resume']
+2026-07-14 10:24:06,585 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:31:46,124 | INFO | reranker | Loading cross-encoder reranker: cross-encoder/ms-marco-MiniLM-L-6-v2
+2026-07-14 10:31:46,125 | INFO | model | No device provided, using mps
+2026-07-14 10:31:46,539 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:46,845 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 404 Not Found"
+2026-07-14 10:31:46,846 | INFO | model | No modules.json found for cross-encoder/ms-marco-MiniLM-L-6-v2, initializing a new CrossEncoder model.
+2026-07-14 10:31:47,134 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:47,460 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-07-14 10:31:47,767 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:48,066 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:48,123 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+2026-07-14 10:31:48,587 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/adapter_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:48,894 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-07-14 10:31:49,201 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:49,713 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:49,756 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+2026-07-14 10:31:50,124 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/processor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:50,532 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-07-14 10:31:50,942 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:51,249 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-14 10:31:51,538 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:51,965 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-14 10:31:52,273 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:52,580 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-07-14 10:31:52,887 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:53,195 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:53,238 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-14 10:31:53,707 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:54,014 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:54,084 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+2026-07-14 10:31:54,451 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:54,774 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:54,837 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/config.json "HTTP/1.1 200 OK"
+2026-07-14 10:31:55,345 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:55,652 | INFO | _client | HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:55,720 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/cross-encoder/ms-marco-MiniLM-L6-v2/c5ee24cb16019beea0893ab7796b1df96625c6b8/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-07-14 10:31:56,013 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:56,471 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-07-14 10:31:56,880 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-07-14 10:31:57,291 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-07-14 10:31:57,546 | INFO | reranker | Ranked 5 chunks down to top 3
+2026-07-14 10:31:58,214 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:31:58,238 | INFO | rag | RAG query answered using 3 chunks from ['Sarvam AI JD']
+2026-07-14 10:31:58,732 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:31:58,850 | INFO | reranker | Ranked 5 chunks down to top 3
+2026-07-14 10:31:59,339 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:31:59,341 | INFO | rag | RAG query answered using 3 chunks from ['Sarvam AI JD']
+2026-07-14 10:31:59,736 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:31:59,813 | INFO | reranker | Ranked 1 chunks down to top 3
+2026-07-14 10:32:00,260 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:32:00,262 | INFO | rag | RAG query answered using 1 chunks from ['Razorpay JD']
+2026-07-14 10:32:00,877 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:32:01,012 | INFO | reranker | Ranked 4 chunks down to top 3
+2026-07-14 10:32:01,489 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:32:01,491 | INFO | rag | RAG query answered using 3 chunks from ['Haptik JD']
+2026-07-14 10:32:02,139 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:32:02,249 | INFO | reranker | Ranked 1 chunks down to top 3
+2026-07-14 10:32:02,718 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:32:02,720 | INFO | rag | RAG query answered using 1 chunks from ['Razorpay JD']
+2026-07-14 10:32:03,333 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:32:03,436 | INFO | reranker | Ranked 5 chunks down to top 3
+2026-07-14 10:32:03,742 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:32:03,745 | INFO | rag | RAG query answered using 3 chunks from ['Sarvam AI JD']
+2026-07-14 10:32:03,875 | INFO | reranker | Ranked 1 chunks down to top 3
+2026-07-14 10:32:04,254 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:32:04,257 | INFO | rag | RAG query answered using 1 chunks from ['Freshworks JD']
+2026-07-14 10:32:04,498 | INFO | reranker | Ranked 6 chunks down to top 3
+2026-07-14 10:32:05,073 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:32:05,076 | INFO | rag | RAG query answered using 3 chunks from ['My Resume']
+2026-07-14 10:32:06,199 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:32:06,391 | INFO | reranker | Ranked 6 chunks down to top 3
+2026-07-14 10:32:07,838 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:32:07,841 | INFO | rag | RAG query answered using 3 chunks from ['My Resume']
+2026-07-14 10:32:08,657 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:32:08,718 | INFO | reranker | Ranked 5 chunks down to top 3
+2026-07-14 10:32:09,272 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:32:09,274 | INFO | rag | RAG query answered using 3 chunks from ['Sarvam AI JD']
+2026-07-14 10:32:09,375 | INFO | reranker | Ranked 1 chunks down to top 3
+2026-07-14 10:32:09,652 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:32:09,654 | INFO | rag | RAG query answered using 1 chunks from ['Freshworks JD']
+2026-07-14 10:32:09,735 | INFO | reranker | Ranked 1 chunks down to top 3
+2026-07-14 10:32:09,951 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:32:09,953 | INFO | rag | RAG query answered using 1 chunks from ['Razorpay JD']
+2026-07-14 10:32:10,165 | INFO | reranker | Ranked 6 chunks down to top 3
+2026-07-14 10:32:10,705 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 10:32:10,708 | INFO | rag | RAG query answered using 3 chunks from ['My Resume']
+2026-07-14 10:32:11,431 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
