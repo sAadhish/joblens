@@ -27,3 +27,5 @@ class IngestionService:
         chunks = self.chunker.chunk(documents, source_label)
 
         return chunks
+
+    

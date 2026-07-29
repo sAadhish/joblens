@@ -1,7 +1,7 @@
 from langchain_qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient
 from langchain_core.documents import Document
-from qdrant_client.models import Distance, VectorParams
+from qdrant_client.models import Distance, VectorParams,Filter, FieldCondition, MatchValue
 from qdrant_client.http.models import PayloadSchemaType
 from models.schemas import DocumentChunk, RetrievedChunk, IndexingResult
 from vectorstore.embedding_service import EmbeddingService
@@ -119,6 +119,53 @@ class QdrantService:
                 success=False,
                 error=str(e)
             )
+
+    def retrive(
+            self,
+            question : str,
+            source_label: str = None,
+            top_k: int = Config.RETRIEVAL_TOP_K
+    )->list[RetrievedChunk]:
+
+        filter_condition = None 
+        if source_label:
+            filter_condition=Filter(
+                must=[
+                    FieldCondition(
+                        key="metadata.source_label",
+                        match=MatchValue(value=source_label)
+                    )
+                ]
+            ) # the filter must full fill this field condition
+
+            results = self.vectorstore.similarity_search_with_score(
+                query=question,
+                k=top_k,
+                filter=filter_condition
+            )
+
+            retrieved =[]
+            for doc, score in results:
+                retrieved.append(RetrievedChunk(
+                    text=doc.page_content,
+                    source_label=doc.metadata.get("source_label", "unknown"),
+                    score=round(float(score), 3),
+                    chunk_index=doc.metadata.get("chunk_index", 0)
+                ))
+
+            logger.info(f"Retrieved {len(retrieved)} chunks for query (source: {source_label})")
+            return retrieved
+
+
+    def collection_count(self) -> int:
+        return self.client.count(collection_name=Config.QDRANT_COLLECTION).count
+
+
+
+
+        
+        
+
 
 
 
