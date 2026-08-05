@@ -51,10 +51,10 @@ class QdrantService:
     def _create_payload_indexes(self):
 
         indexes=[
-            "source_label",
-            "document_type",
-            "user_id",
-            "company_name"
+            "metadata.source_label",
+            "metadata.document_type",
+            "metadata.user_id",
+            "metadata.company_name"
         ]
 
         for field in indexes:
@@ -120,7 +120,9 @@ class QdrantService:
                 error=str(e)
             )
 
-    def retrive(
+
+
+    def retrieve(
             self,
             question : str,
             source_label: str = None,
@@ -138,27 +140,71 @@ class QdrantService:
                 ]
             ) # the filter must full fill this field condition
 
-            results = self.vectorstore.similarity_search_with_score(
+        results = self.vectorstore.similarity_search_with_score(
                 query=question,
                 k=top_k,
                 filter=filter_condition
             )
 
-            retrieved =[]
-            for doc, score in results:
-                retrieved.append(RetrievedChunk(
+        retrieved =[]
+        for doc, score in results:
+            retrieved.append(RetrievedChunk(
                     text=doc.page_content,
                     source_label=doc.metadata.get("source_label", "unknown"),
                     score=round(float(score), 3),
                     chunk_index=doc.metadata.get("chunk_index", 0)
                 ))
 
-            logger.info(f"Retrieved {len(retrieved)} chunks for query (source: {source_label})")
-            return retrieved
+        logger.info(f"Retrieved {len(retrieved)} chunks for query (source: {source_label})")
+        return retrieved
 
 
     def collection_count(self) -> int:
         return self.client.count(collection_name=Config.QDRANT_COLLECTION).count
+
+# DEBUG
+
+    def debug_payloads(self, limit: int = 10):
+
+        print("\n" + "=" * 70)
+
+        print("DEBUGGING QDRANT PAYLOADS")
+
+        print("=" * 70)
+
+        points, _ = self.client.scroll(
+
+            collection_name=Config.QDRANT_COLLECTION,
+
+            limit=limit,
+
+            with_payload=True,
+
+            with_vectors=False,
+
+        )
+
+        print(f"Found {len(points)} points\n")
+
+        for i, point in enumerate(points, start=1):
+
+            print("-" * 70)
+
+            print(f"Point {i}")
+
+            print("-" * 70)
+
+            print("ID:")
+
+            print(point.id)
+
+            print("\nPayload:")
+
+            print(point.payload)
+
+            print()
+
+        print("=" * 70)
 
 
 
