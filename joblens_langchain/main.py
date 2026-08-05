@@ -88,7 +88,7 @@ FastAPI.
     # Index Resume
     # -------------------------------------------------
 
-    resume_path = "sample.pdf"
+    resume_path = "data/sample.pdf"
 
     if os.path.exists(resume_path):
 
