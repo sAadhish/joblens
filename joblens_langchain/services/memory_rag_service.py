@@ -6,7 +6,7 @@
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
-from langchain_community.memory import ConversationBufferMemory
+from langchain.memory import ConversationBufferMemory
 from vectorstore.qdrant_service import QdrantService
 from services.llm_service import LLMService
 from models.schemas import RAGResponse
@@ -16,38 +16,20 @@ from logger import logger
 
 
 class MemoryRAGService:
-    """
-    RAG with conversation memory.
-
-    Key difference from RAGService:
-    Every query includes the full conversation history.
-    The LLM can refer to "that role" or "the previous answer"
-    and understand what it means.
-
-    Why a separate class and not just updating RAGService?
-    Stateless and stateful are fundamentally different contracts.
-    A stateless service can be called from anywhere safely.
-    A stateful service must be managed — you need to know when
-    to reset memory (new user session) and when to keep it (same session).
-    Mixing them in one class creates confusion about which mode you're in.
-    """
+    
 
     def __init__(self, vector_service: QdrantService):
         self.vector = vector_service
         self.llm = LLMService.get_model()
         self.output_parser = StrOutputParser()
 
-        # Memory stores the conversation history
-        # ConversationBufferMemory keeps ALL messages — good for short conversations
-        # For long conversations, you'd use ConversationSummaryMemory instead
-        # which summarizes older messages to save context window space
+      
         self.memory = ConversationBufferMemory(
             return_messages=True,
             memory_key="chat_history"
         )
 
-        # Prompt includes chat_history placeholder
-        # MessagesPlaceholder injects the full conversation history here
+   
         self.prompt = ChatPromptTemplate.from_messages([
             ("system", """You are a career advisor for tech professionals in India.
 Answer using ONLY the provided documents.

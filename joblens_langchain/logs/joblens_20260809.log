@@ -1,0 +1,1025 @@
+2026-08-09 13:47:08,296 | INFO | model | No device provided, using mps
+2026-08-09 13:47:08,788 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:08,832 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:09,351 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:09,352 | WARNING | _http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-08-09 13:47:09,425 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:09,429 | INFO | model | Loading SentenceTransformer model from BAAI/bge-base-en-v1.5.
+2026-08-09 13:47:09,722 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:09,790 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:10,064 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:10,111 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md "HTTP/1.1 200 OK"
+2026-08-09 13:47:10,580 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:10,628 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:11,008 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:11,071 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:11,373 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 13:47:11,647 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:11,709 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:12,322 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 13:47:12,611 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 13:47:13,038 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 13:47:13,301 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 13:47:13,610 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:13,668 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:13,938 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:13,981 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:14,242 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:14,292 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:14,571 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:14,629 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:15,087 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-08-09 13:47:15,600 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-08-09 13:47:15,969 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:16,026 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:16,521 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+2026-08-09 13:47:17,281 | INFO | model | No device provided, using mps
+2026-08-09 13:47:17,803 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:17,853 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:18,259 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:18,309 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:18,311 | INFO | model | Loading SentenceTransformer model from BAAI/bge-base-en-v1.5.
+2026-08-09 13:47:18,773 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:18,828 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:18,961 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2026-08-09 13:47:19,285 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:19,348 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md "HTTP/1.1 200 OK"
+2026-08-09 13:47:19,662 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:19,703 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:19,986 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:20,062 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:20,514 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 13:47:21,025 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:21,061 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:21,424 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 13:47:21,845 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 13:47:22,254 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 13:47:22,561 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 13:47:22,970 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:23,024 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:23,381 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:23,427 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:23,893 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:23,944 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:24,405 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:24,465 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:24,818 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-08-09 13:47:25,122 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-08-09 13:47:25,633 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 13:47:25,697 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-08-09 13:47:26,148 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+2026-08-09 13:47:27,177 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2026-08-09 13:47:27,188 | INFO | qdrant_service | Using existing collection: Joblens
+2026-08-09 13:47:27,578 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 13:47:27,800 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 13:47:28,011 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 13:47:28,236 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 13:47:28,449 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens "HTTP/1.1 200 OK"
+2026-08-09 13:47:29,193 | INFO | qdrant_service | QdrantService initialized using collection 'Joblens'
+2026-08-09 13:47:30,043 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2026-08-09 13:47:30,044 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2026-08-09 13:47:30,046 | INFO | qdrant_service | Using existing collection: Joblens
+2026-08-09 13:47:30,259 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 13:47:30,480 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 13:47:30,693 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 13:47:30,927 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 13:47:31,265 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens "HTTP/1.1 200 OK"
+2026-08-09 13:47:31,478 | INFO | qdrant_service | QdrantService initialized using collection 'Joblens'
+2026-08-09 13:47:31,490 | INFO | rag_service | RAG Service initialized
+2026-08-09 13:47:31,490 | INFO | career_service | CareerService initialized
+2026-08-09 13:47:31,782 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 13:47:31,786 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-09 13:47:32,317 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:32,330 | INFO | rag_service | RAG query answered using 1 chunks from ['Sarvam AI JD']
+2026-08-09 13:47:32,589 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 13:47:32,590 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-09 13:47:33,007 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 13:47:33,008 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-09 13:47:33,262 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:33,266 | INFO | rag_service | RAG query answered using 1 chunks from ['Sarvam AI JD']
+2026-08-09 13:47:33,620 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 13:47:33,621 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-09 13:47:33,874 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 13:47:33,875 | INFO | qdrant_service | Retrieved 0 chunks for query (source: Razorpay JD)
+2026-08-09 13:47:34,235 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 13:47:34,236 | INFO | qdrant_service | Retrieved 0 chunks for query (source: Razorpay JD)
+2026-08-09 13:47:34,644 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 13:47:34,645 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Haptik JD)
+2026-08-09 13:47:35,054 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:35,058 | INFO | rag_service | RAG query answered using 1 chunks from ['Haptik JD']
+2026-08-09 13:47:35,343 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 13:47:35,344 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Haptik JD)
+2026-08-09 13:47:35,771 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 13:47:35,774 | INFO | qdrant_service | Retrieved 3 chunks for query (source: My Resume)
+2026-08-09 13:47:36,487 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:36,490 | INFO | rag_service | RAG query answered using 3 chunks from ['My Resume']
+2026-08-09 13:47:36,794 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 13:47:36,795 | INFO | qdrant_service | Retrieved 3 chunks for query (source: My Resume)
+2026-08-09 13:47:37,205 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 13:47:37,207 | INFO | qdrant_service | Retrieved 3 chunks for query (source: My Resume)
+2026-08-09 13:47:37,613 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:37,616 | INFO | rag_service | RAG query answered using 3 chunks from ['My Resume']
+2026-08-09 13:47:37,926 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 13:47:37,928 | INFO | qdrant_service | Retrieved 3 chunks for query (source: My Resume)
+2026-08-09 13:47:47,775 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:47,853 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:47,856 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:47,862 | WARNING | pydantic_prompt | LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+2026-08-09 13:47:48,035 | WARNING | pydantic_prompt | LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+2026-08-09 13:47:48,080 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:48,081 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:48,081 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:48,082 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:48,082 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:48,083 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:48,083 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:48,087 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:48,100 | WARNING | pydantic_prompt | LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+2026-08-09 13:47:48,149 | WARNING | pydantic_prompt | LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+2026-08-09 13:47:48,206 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:48,207 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:48,207 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:48,289 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:48,289 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:47:48,303 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:48,303 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:47:48,312 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:48,312 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-08-09 13:47:48,312 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:48,313 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:47:48,317 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:48,322 | WARNING | pydantic_prompt | LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+2026-08-09 13:47:48,382 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:48,383 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:48,383 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:47:48,384 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 13:47:48,423 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:48,625 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:48,626 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-09 13:47:48,666 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:48,668 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-09 13:47:48,679 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:48,681 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 13:47:48,981 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:49,063 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:49,064 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:47:49,409 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:49,412 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-08-09 13:47:50,749 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:50,752 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-08-09 13:47:50,757 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:50,762 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:50,764 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-09 13:47:50,769 | WARNING | pydantic_prompt | LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+2026-08-09 13:47:51,981 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:52,092 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:52,094 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 13:47:52,490 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:52,493 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:47:52,836 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:53,125 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:53,127 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-08-09 13:47:53,376 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:53,377 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:47:53,434 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:53,436 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:47:53,437 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:53,438 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 13:47:53,445 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:53,446 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:47:54,500 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:54,500 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-08-09 13:47:54,697 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:54,770 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:54,772 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-08-09 13:47:55,151 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:55,153 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-08-09 13:47:56,568 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:56,586 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:57,046 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:57,047 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-09 13:47:57,113 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:57,113 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 13:47:57,487 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:57,530 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:57,543 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:57,689 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:57,690 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 13:47:58,186 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:58,187 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 13:47:58,491 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:58,491 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-09 13:47:58,566 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:58,567 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-08-09 13:47:59,426 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:47:59,649 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:47:59,649 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:48:00,190 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:00,191 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:00,581 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:00,583 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:48:00,778 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:00,780 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:01,300 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:01,615 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:01,745 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:01,747 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:48:01,853 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:02,173 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:02,175 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:02,243 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:02,244 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:02,693 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:02,705 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:48:03,725 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:05,159 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:48:05,272 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:05,273 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:05,274 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:05,378 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:05,379 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:06,101 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:06,103 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:48:06,174 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:06,176 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 13:48:06,193 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:07,133 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:07,134 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:48:07,147 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:07,148 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:07,258 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:07,259 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:07,323 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:07,936 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:07,937 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:48:10,371 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:10,373 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 13:48:10,455 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:10,457 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:11,182 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:48:11,262 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:11,263 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 13:48:12,054 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:12,055 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-08-09 13:48:12,255 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:12,271 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:12,331 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:12,991 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:12,992 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:13,219 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:13,221 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:13,865 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:13,866 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:15,578 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:16,458 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:17,302 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:17,303 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-08-09 13:48:17,960 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:48:18,055 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:18,056 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:18,336 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:18,338 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-08-09 13:48:18,390 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:18,391 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 13:48:18,452 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:18,454 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:18,981 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:18,982 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 13:48:19,143 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:19,647 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:19,648 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:48:20,397 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:20,398 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 13:48:23,503 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:23,503 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-08-09 13:48:23,729 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:23,730 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:48:24,209 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:48:24,298 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:24,299 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:24,511 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:24,577 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:25,102 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:25,116 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:25,117 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:25,550 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:25,551 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 13:48:25,947 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:26,545 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:26,547 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:48:27,937 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:27,939 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-08-09 13:48:28,504 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:48:29,364 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:29,366 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-08-09 13:48:29,406 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:29,406 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:30,211 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:30,213 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:48:30,663 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:31,777 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:31,779 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:34,006 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:34,008 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 13:48:34,595 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:34,751 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:48:34,866 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:34,868 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-08-09 13:48:35,162 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:35,164 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-08-09 13:48:35,573 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:35,574 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 8.000000 seconds
+2026-08-09 13:48:36,505 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:36,506 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 13:48:36,915 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:37,104 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:37,106 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 13:48:39,631 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:39,634 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-09 13:48:41,738 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:41,740 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-08-09 13:48:42,347 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:48:42,613 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:42,692 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:42,694 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:48:42,859 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:43,645 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:44,174 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:44,176 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:48:44,177 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:45,920 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:45,922 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 13:48:47,166 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:48:48,282 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:48,285 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 13:48:48,852 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:48,854 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:48,993 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:48,995 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 13:48:51,301 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:51,303 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 13:48:53,927 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:53,928 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-08-09 13:48:54,498 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:54,499 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 13:48:54,505 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:54,545 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:48:55,022 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:56,602 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:48:56,604 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:49:00,763 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:49:00,764 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 8.000000 seconds
+2026-08-09 13:49:01,991 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:49:11,127 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:49:11,560 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 13:49:14,163 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 13:49:14,164 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 13:49:18,580 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 19:56:39,937 | INFO | model | No device provided, using mps
+2026-08-09 19:56:40,329 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 19:56:40,331 | WARNING | _http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-08-09 19:56:40,372 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-09 19:56:40,519 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2026-08-09 19:56:40,813 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 19:56:40,899 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-09 19:56:40,903 | INFO | model | Loading SentenceTransformer model from BAAI/bge-base-en-v1.5.
+2026-08-09 19:56:41,219 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 19:56:41,289 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-09 19:56:41,596 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 19:56:41,650 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md "HTTP/1.1 200 OK"
+2026-08-09 19:56:41,950 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 19:56:42,009 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-09 19:56:42,312 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 19:56:42,378 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-08-09 19:56:42,648 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 19:56:42,905 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 19:56:42,967 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 19:56:43,459 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 19:56:43,835 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 19:56:44,294 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 19:56:44,595 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 19:56:44,852 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 19:56:44,929 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-09 19:56:45,185 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 19:56:45,221 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 19:56:45,514 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 19:56:45,573 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 19:56:45,867 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 19:56:45,927 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-09 19:56:46,209 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-08-09 19:56:46,547 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-08-09 19:56:46,956 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 19:56:46,996 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-08-09 19:56:47,269 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+2026-08-09 19:56:49,106 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2026-08-09 19:56:49,115 | INFO | qdrant_service | Using existing collection: Joblens
+2026-08-09 19:56:49,333 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 19:56:49,577 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 19:56:49,812 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 19:56:50,022 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 19:56:50,202 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens "HTTP/1.1 200 OK"
+2026-08-09 19:56:50,621 | INFO | qdrant_service | QdrantService initialized using collection 'Joblens'
+2026-08-09 19:56:51,143 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2026-08-09 19:56:51,144 | INFO | qdrant_service | Using existing collection: Joblens
+2026-08-09 19:56:51,167 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2026-08-09 19:56:51,358 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 19:56:51,568 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 19:56:51,776 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 19:56:51,968 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 19:56:52,281 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens "HTTP/1.1 200 OK"
+2026-08-09 19:56:52,353 | INFO | qdrant_service | QdrantService initialized using collection 'Joblens'
+2026-08-09 19:56:52,421 | INFO | rag_service | RAG Service initialized
+2026-08-09 19:56:52,421 | INFO | career_service | CareerService initialized
+2026-08-09 19:56:52,793 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/scroll "HTTP/1.1 200 OK"
+2026-08-09 19:56:52,800 | INFO | chunker | Created 1 chunks
+2026-08-09 19:56:53,074 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points?wait=true "HTTP/1.1 200 OK"
+2026-08-09 19:56:53,076 | INFO | qdrant_service | Indexed 1 chunks for 'Sarvam AI JD'
+2026-08-09 19:56:53,076 | INFO | chunker | Created 1 chunks
+2026-08-09 19:56:53,407 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points?wait=true "HTTP/1.1 200 OK"
+2026-08-09 19:56:53,409 | INFO | qdrant_service | Indexed 1 chunks for 'Freshworks JD'
+2026-08-09 19:56:53,409 | INFO | chunker | Created 1 chunks
+2026-08-09 19:56:53,715 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points?wait=true "HTTP/1.1 200 OK"
+2026-08-09 19:56:53,717 | INFO | qdrant_service | Indexed 1 chunks for 'Haptik JD'
+2026-08-09 19:56:54,124 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/count "HTTP/1.1 200 OK"
+2026-08-09 19:56:54,432 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/scroll "HTTP/1.1 200 OK"
+2026-08-09 19:56:55,145 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 19:56:55,149 | INFO | qdrant_service | Retrieved 2 chunks for query (source: Sarvam AI JD)
+2026-08-09 19:56:55,867 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 19:56:55,889 | INFO | rag_service | RAG query answered using 2 chunks from ['Sarvam AI JD']
+2026-08-09 19:56:56,274 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 19:56:56,276 | INFO | qdrant_service | Retrieved 2 chunks for query (source: Freshworks JD)
+2026-08-09 19:56:56,685 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 19:56:56,689 | INFO | rag_service | RAG query answered using 2 chunks from ['Freshworks JD']
+2026-08-09 19:56:56,909 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 19:56:56,911 | INFO | qdrant_service | Retrieved 2 chunks for query (source: Haptik JD)
+2026-08-09 19:56:57,299 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 19:56:57,303 | INFO | rag_service | RAG query answered using 2 chunks from ['Haptik JD']
+2026-08-09 20:05:21,826 | INFO | model | No device provided, using mps
+2026-08-09 20:05:22,340 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:22,390 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:22,685 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:22,686 | WARNING | _http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-08-09 20:05:22,731 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:22,734 | INFO | model | Loading SentenceTransformer model from BAAI/bge-base-en-v1.5.
+2026-08-09 20:05:22,979 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:23,082 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:23,567 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:23,629 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md "HTTP/1.1 200 OK"
+2026-08-09 20:05:23,901 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:23,969 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:24,266 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:24,335 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:24,590 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 20:05:24,923 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:24,971 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:25,424 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 20:05:25,705 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 20:05:26,026 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 20:05:26,333 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 20:05:26,640 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:26,693 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:26,986 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:27,056 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:27,562 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:27,613 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:27,907 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:27,975 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:28,264 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-08-09 20:05:28,688 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-08-09 20:05:29,098 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:29,171 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:29,470 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+2026-08-09 20:05:30,297 | INFO | model | No device provided, using mps
+2026-08-09 20:05:30,580 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:30,634 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:30,915 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:30,961 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:30,964 | INFO | model | Loading SentenceTransformer model from BAAI/bge-base-en-v1.5.
+2026-08-09 20:05:31,220 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:31,291 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:31,585 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:31,627 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md "HTTP/1.1 200 OK"
+2026-08-09 20:05:31,741 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2026-08-09 20:05:31,939 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:31,981 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:32,259 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:32,299 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:32,570 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 20:05:32,989 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:33,049 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:33,384 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 20:05:33,808 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 20:05:34,116 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 20:05:34,523 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 20:05:34,935 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:35,011 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:35,272 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:35,310 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:35,564 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:35,610 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:35,922 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:35,971 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:36,264 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-08-09 20:05:36,676 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-08-09 20:05:37,085 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 20:05:37,135 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-08-09 20:05:37,430 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+2026-08-09 20:05:38,416 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2026-08-09 20:05:38,427 | INFO | qdrant_service | Using existing collection: Joblens
+2026-08-09 20:05:38,664 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 20:05:39,030 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 20:05:39,338 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 20:05:39,645 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 20:05:40,053 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens "HTTP/1.1 200 OK"
+2026-08-09 20:05:40,421 | INFO | qdrant_service | QdrantService initialized using collection 'Joblens'
+2026-08-09 20:05:41,181 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2026-08-09 20:05:41,182 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2026-08-09 20:05:41,184 | INFO | qdrant_service | Using existing collection: Joblens
+2026-08-09 20:05:41,488 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 20:05:41,699 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 20:05:41,903 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 20:05:42,205 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 20:05:42,512 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens "HTTP/1.1 200 OK"
+2026-08-09 20:05:42,578 | INFO | qdrant_service | QdrantService initialized using collection 'Joblens'
+2026-08-09 20:05:42,594 | INFO | rag_service | RAG Service initialized
+2026-08-09 20:05:42,594 | INFO | career_service | CareerService initialized
+2026-08-09 20:05:43,024 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 20:05:43,029 | INFO | qdrant_service | Retrieved 2 chunks for query (source: Sarvam AI JD)
+2026-08-09 20:05:43,583 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:43,607 | INFO | rag_service | RAG query answered using 2 chunks from ['Sarvam AI JD']
+2026-08-09 20:05:44,415 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 20:05:44,417 | INFO | qdrant_service | Retrieved 2 chunks for query (source: Sarvam AI JD)
+2026-08-09 20:05:44,703 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 20:05:44,705 | INFO | qdrant_service | Retrieved 2 chunks for query (source: Sarvam AI JD)
+2026-08-09 20:05:45,174 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:45,175 | INFO | rag_service | RAG query answered using 2 chunks from ['Sarvam AI JD']
+2026-08-09 20:05:45,669 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 20:05:45,671 | INFO | qdrant_service | Retrieved 2 chunks for query (source: Sarvam AI JD)
+2026-08-09 20:05:45,905 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 20:05:45,906 | INFO | qdrant_service | Retrieved 0 chunks for query (source: Razorpay JD)
+2026-08-09 20:05:46,388 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 20:05:46,390 | INFO | qdrant_service | Retrieved 0 chunks for query (source: Razorpay JD)
+2026-08-09 20:05:46,680 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 20:05:46,682 | INFO | qdrant_service | Retrieved 2 chunks for query (source: Haptik JD)
+2026-08-09 20:05:46,925 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:46,929 | INFO | rag_service | RAG query answered using 2 chunks from ['Haptik JD']
+2026-08-09 20:05:47,632 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 20:05:47,634 | INFO | qdrant_service | Retrieved 2 chunks for query (source: Haptik JD)
+2026-08-09 20:05:47,888 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 20:05:47,890 | INFO | qdrant_service | Retrieved 3 chunks for query (source: My Resume)
+2026-08-09 20:05:48,657 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:48,661 | INFO | rag_service | RAG query answered using 3 chunks from ['My Resume']
+2026-08-09 20:05:48,962 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 20:05:48,964 | INFO | qdrant_service | Retrieved 3 chunks for query (source: My Resume)
+2026-08-09 20:05:49,229 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 20:05:49,230 | INFO | qdrant_service | Retrieved 3 chunks for query (source: My Resume)
+2026-08-09 20:05:49,510 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:49,514 | INFO | rag_service | RAG query answered using 3 chunks from ['My Resume']
+2026-08-09 20:05:49,752 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 20:05:49,754 | INFO | qdrant_service | Retrieved 3 chunks for query (source: My Resume)
+2026-08-09 20:05:59,001 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:59,006 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:59,008 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:59,010 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:59,011 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:59,016 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:59,017 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:59,020 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:59,022 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:59,036 | WARNING | pydantic_prompt | LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+2026-08-09 20:05:59,145 | WARNING | pydantic_prompt | LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+2026-08-09 20:05:59,190 | WARNING | pydantic_prompt | LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+2026-08-09 20:05:59,248 | WARNING | pydantic_prompt | LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+2026-08-09 20:05:59,294 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:59,295 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:59,295 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:59,296 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:59,296 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:59,296 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:59,304 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:05:59,396 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:05:59,396 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:05:59,414 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:05:59,414 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:05:59,414 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:05:59,415 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:05:59,415 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:05:59,415 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-09 20:05:59,416 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:05:59,417 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:05:59,417 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:05:59,417 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:05:59,418 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-09 20:05:59,418 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-09 20:05:59,418 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:05:59,419 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 20:05:59,419 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:05:59,419 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:05:59,424 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:05:59,424 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-08-09 20:05:59,426 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:05:59,426 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:05:59,427 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:05:59,427 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:05:59,430 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:05:59,431 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:05:59,431 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:05:59,431 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-08-09 20:06:00,022 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:06:01,525 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:01,528 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-08-09 20:06:01,670 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:06:01,676 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:06:01,684 | WARNING | pydantic_prompt | LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+2026-08-09 20:06:01,958 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:01,959 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-08-09 20:06:02,645 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:03,273 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-09 20:06:04,515 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:04,516 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 20:06:04,517 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:04,518 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:04,520 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:04,520 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-09 20:06:04,521 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 20:06:04,521 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 20:06:04,522 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:04,526 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 20:06:04,527 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:04,528 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:04,529 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 20:06:04,529 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 20:06:04,601 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:04,603 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 20:06:04,677 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-09 20:06:05,525 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:05,527 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 20:06:06,519 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:06,522 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 20:06:06,523 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:06,524 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 20:06:06,987 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:06:07,522 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-09 20:06:07,605 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:07,610 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:07,612 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:07,613 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:07,614 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:07,618 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:07,680 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:07,959 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:07,960 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 20:06:08,036 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:08,037 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 20:06:08,061 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:08,063 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:08,196 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:08,199 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 20:06:08,366 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:08,369 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:08,477 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:08,479 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 20:06:08,643 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:08,645 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 20:06:09,086 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:09,088 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:09,601 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:09,604 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:09,610 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:10,051 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:10,053 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 20:06:10,076 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:10,077 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 20:06:10,279 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:10,281 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 20:06:11,516 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-09 20:06:12,125 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:12,126 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 20:06:12,276 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:12,278 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:12,314 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:06:12,599 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:12,601 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:12,717 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:12,718 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:13,165 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:13,167 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:13,486 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:13,488 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:14,177 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:14,178 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 20:06:14,179 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:14,180 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:14,184 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:14,360 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:14,361 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:14,755 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:14,757 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:17,154 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-09 20:06:17,690 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:06:17,724 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:17,811 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:18,237 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:18,240 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:18,518 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:18,520 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 20:06:18,560 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:19,174 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:19,176 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 20:06:19,279 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:19,281 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 20:06:19,283 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:19,440 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:19,758 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:19,760 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 20:06:19,845 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:19,847 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:19,848 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:19,848 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 20:06:20,254 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:20,531 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:20,532 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 20:06:20,597 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:20,598 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 20:06:20,705 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:20,707 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 20:06:22,355 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:22,356 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:22,636 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:22,726 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:22,956 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:22,958 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:23,061 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:06:23,845 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:23,846 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:24,644 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:24,645 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 20:06:24,666 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:24,666 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 20:06:24,799 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:24,801 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:24,921 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:25,996 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:25,998 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 20:06:27,439 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:27,845 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:28,035 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:28,913 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:30,239 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:30,241 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 8.000000 seconds
+2026-08-09 20:06:30,242 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:30,242 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-08-09 20:06:30,763 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:30,764 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:30,842 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:30,844 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:31,034 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:06:31,640 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:31,641 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 20:06:31,679 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:31,680 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 20:06:32,113 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:32,115 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-08-09 20:06:32,320 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-09 20:06:34,563 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:34,565 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 20:06:35,919 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:35,921 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 20:06:37,359 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:37,360 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-09 20:06:37,846 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:37,847 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-08-09 20:06:38,219 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:06:38,322 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:38,681 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:38,683 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 20:06:39,040 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:39,200 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:39,202 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 20:06:39,479 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:39,765 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:39,767 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-09 20:06:40,559 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:40,560 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:42,520 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:06:44,852 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:45,034 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:45,278 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:45,632 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:45,634 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 20:06:46,842 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:46,844 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 20:06:47,048 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:47,049 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 20:06:47,120 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:47,122 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-09 20:06:49,605 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:49,606 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-08-09 20:06:49,676 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:06:49,756 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:49,758 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:49,946 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:49,948 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 20:06:50,124 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:50,124 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:51,766 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:55,400 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:55,435 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:06:55,519 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:55,520 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:06:55,521 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:55,522 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 8.000000 seconds
+2026-08-09 20:06:56,053 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:56,685 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:56,686 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-08-09 20:06:58,360 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:06:58,362 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:07:00,639 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:07:00,641 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-09 20:07:03,385 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:07:03,564 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:07:03,566 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 20:07:03,591 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:07:03,592 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 20:07:03,801 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:07:07,695 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:07:07,697 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:07:10,008 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:07:10,096 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:07:10,096 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-09 20:07:13,752 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:07:22,470 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:07:22,472 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 20:07:22,474 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:07:22,474 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-08-09 20:07:23,173 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:07:26,873 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-09 20:07:28,615 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:07:28,616 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-09 20:07:28,901 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:07:32,650 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:07:32,651 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-08-09 20:07:33,310 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:07:34,757 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:07:34,760 | INFO | _base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-09 20:07:39,955 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-09 20:08:15,090 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 20:08:19,234 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-09 20:08:59,241 | ERROR | executor | Exception raised in Job[17]: TimeoutError()
+2026-08-09 21:46:08,798 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled
+2026-08-09 21:46:08,870 | INFO | model | No device provided, using mps
+2026-08-09 21:46:09,531 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:46:09,591 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-09 21:46:09,944 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:46:09,985 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-09 21:46:09,988 | INFO | model | Loading SentenceTransformer model from BAAI/bge-base-en-v1.5.
+2026-08-09 21:46:10,260 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:46:10,261 | WARNING | _http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-08-09 21:46:10,309 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-09 21:46:10,512 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2026-08-09 21:46:10,572 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:46:10,631 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md "HTTP/1.1 200 OK"
+2026-08-09 21:46:10,932 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:46:10,976 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-09 21:46:11,269 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:46:11,308 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-08-09 21:46:11,618 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 21:46:11,899 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:46:11,938 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 21:46:12,412 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 21:46:12,908 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 21:46:13,320 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 21:46:13,831 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 21:46:14,127 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:46:14,185 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-09 21:46:14,464 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:46:14,508 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 21:46:14,895 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:46:14,951 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 21:46:15,260 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:46:15,317 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-09 21:46:15,687 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-08-09 21:46:16,084 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-08-09 21:46:16,595 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:46:16,678 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-08-09 21:46:16,985 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+2026-08-09 21:46:18,849 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2026-08-09 21:46:18,863 | INFO | qdrant_service | Using existing collection: Joblens
+2026-08-09 21:46:19,157 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 21:46:19,427 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 21:46:19,689 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 21:46:20,078 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 21:46:20,290 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens "HTTP/1.1 200 OK"
+2026-08-09 21:46:20,710 | INFO | qdrant_service | QdrantService initialized using collection 'Joblens'
+2026-08-09 21:46:21,270 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2026-08-09 21:46:21,272 | INFO | qdrant_service | Using existing collection: Joblens
+2026-08-09 21:46:21,334 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2026-08-09 21:46:21,715 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 21:46:21,951 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 21:46:22,189 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 21:46:22,421 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 21:46:22,598 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens "HTTP/1.1 200 OK"
+2026-08-09 21:46:22,671 | INFO | qdrant_service | QdrantService initialized using collection 'Joblens'
+2026-08-09 21:46:22,733 | INFO | rag_service | RAG Service initialized
+2026-08-09 21:46:22,733 | INFO | career_service | CareerService initialized
+2026-08-09 21:46:22,936 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/scroll "HTTP/1.1 200 OK"
+2026-08-09 21:46:22,939 | INFO | chunker | Created 1 chunks
+2026-08-09 21:46:23,257 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points?wait=true "HTTP/1.1 200 OK"
+2026-08-09 21:46:23,259 | INFO | qdrant_service | Indexed 1 chunks for 'Sarvam AI JD'
+2026-08-09 21:46:23,259 | INFO | chunker | Created 1 chunks
+2026-08-09 21:46:23,572 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points?wait=true "HTTP/1.1 200 OK"
+2026-08-09 21:46:23,573 | INFO | qdrant_service | Indexed 1 chunks for 'Freshworks JD'
+2026-08-09 21:46:23,574 | INFO | chunker | Created 1 chunks
+2026-08-09 21:46:24,219 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points?wait=true "HTTP/1.1 200 OK"
+2026-08-09 21:46:24,221 | INFO | qdrant_service | Indexed 1 chunks for 'Haptik JD'
+2026-08-09 21:46:24,416 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/count "HTTP/1.1 200 OK"
+2026-08-09 21:46:24,663 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/scroll "HTTP/1.1 200 OK"
+2026-08-09 21:46:24,951 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 21:46:24,956 | INFO | qdrant_service | Retrieved 3 chunks for query (source: Sarvam AI JD)
+2026-08-09 21:46:25,711 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 21:46:25,739 | INFO | rag_service | RAG query answered using 3 chunks from ['Sarvam AI JD']
+2026-08-09 21:46:26,027 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 21:46:26,030 | INFO | qdrant_service | Retrieved 3 chunks for query (source: Freshworks JD)
+2026-08-09 21:46:26,349 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 21:46:26,356 | INFO | rag_service | RAG query answered using 3 chunks from ['Freshworks JD']
+2026-08-09 21:46:26,578 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 21:46:26,580 | INFO | qdrant_service | Retrieved 3 chunks for query (source: Haptik JD)
+2026-08-09 21:46:26,974 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 21:46:26,982 | INFO | rag_service | RAG query answered using 3 chunks from ['Haptik JD']
+2026-08-09 21:47:37,178 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled
+2026-08-09 21:47:37,280 | INFO | model | No device provided, using mps
+2026-08-09 21:47:37,764 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:47:37,765 | WARNING | _http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-08-09 21:47:37,814 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-09 21:47:37,928 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2026-08-09 21:47:38,142 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:47:38,190 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-09 21:47:38,194 | INFO | model | Loading SentenceTransformer model from BAAI/bge-base-en-v1.5.
+2026-08-09 21:47:38,618 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:47:38,668 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-09 21:47:39,130 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:47:39,190 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md "HTTP/1.1 200 OK"
+2026-08-09 21:47:39,642 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:47:39,714 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-09 21:47:40,021 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:47:40,071 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-08-09 21:47:40,564 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 21:47:41,073 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:47:41,146 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 21:47:41,625 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 21:47:41,944 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 21:47:42,304 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 21:47:42,610 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-09 21:47:42,918 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:47:42,988 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-09 21:47:43,430 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:47:43,501 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 21:47:43,942 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:47:43,993 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-09 21:47:44,455 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:47:44,509 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-09 21:47:44,810 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-08-09 21:47:45,171 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-08-09 21:47:45,581 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-09 21:47:45,632 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-08-09 21:47:45,943 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+2026-08-09 21:47:47,402 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2026-08-09 21:47:47,409 | INFO | qdrant_service | Using existing collection: Joblens
+2026-08-09 21:47:47,641 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 21:47:47,936 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 21:47:48,243 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 21:47:48,486 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 21:47:48,858 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens "HTTP/1.1 200 OK"
+2026-08-09 21:47:49,371 | INFO | qdrant_service | QdrantService initialized using collection 'Joblens'
+2026-08-09 21:47:50,291 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2026-08-09 21:47:50,292 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2026-08-09 21:47:50,293 | INFO | qdrant_service | Using existing collection: Joblens
+2026-08-09 21:47:50,598 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 21:47:51,008 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 21:47:51,314 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 21:47:51,571 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-09 21:47:51,930 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens "HTTP/1.1 200 OK"
+2026-08-09 21:47:52,003 | INFO | qdrant_service | QdrantService initialized using collection 'Joblens'
+2026-08-09 21:47:52,068 | INFO | rag_service | RAG Service initialized
+2026-08-09 21:47:52,068 | INFO | career_service | CareerService initialized
+2026-08-09 21:47:53,979 | INFO | langsmith_eval | Created dataset: JobLens RAG Eval v1 with 5 examples
+2026-08-09 21:47:56,981 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 21:47:56,986 | INFO | qdrant_service | Retrieved 3 chunks for query (source: Sarvam AI JD)
+2026-08-09 21:47:57,558 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 21:47:57,576 | INFO | rag_service | RAG query answered using 3 chunks from ['Sarvam AI JD']
+2026-08-09 21:47:57,972 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 21:47:57,974 | INFO | qdrant_service | Retrieved 3 chunks for query (source: Sarvam AI JD)
+2026-08-09 21:47:58,279 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 21:47:58,284 | INFO | rag_service | RAG query answered using 3 chunks from ['Sarvam AI JD']
+2026-08-09 21:47:58,688 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 21:47:58,690 | INFO | qdrant_service | Retrieved 3 chunks for query (source: Haptik JD)
+2026-08-09 21:47:59,184 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 21:47:59,189 | INFO | rag_service | RAG query answered using 3 chunks from ['Haptik JD']
+2026-08-09 21:47:59,496 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 21:47:59,498 | INFO | qdrant_service | Retrieved 3 chunks for query (source: My Resume)
+2026-08-09 21:48:00,162 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 21:48:00,167 | INFO | rag_service | RAG query answered using 3 chunks from ['My Resume']
+2026-08-09 21:48:00,456 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-09 21:48:00,458 | INFO | qdrant_service | Retrieved 3 chunks for query (source: Sarvam AI JD)
+2026-08-09 21:48:00,718 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-09 21:48:00,724 | INFO | rag_service | RAG query answered using 3 chunks from ['Sarvam AI JD']

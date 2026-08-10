@@ -7,6 +7,9 @@ import os
 
 from config import Config
 from services.career_service import CareerService
+from langsmith_setup import setup_langsmith
+
+setup_langsmith() 
 
 
 logging.basicConfig(
