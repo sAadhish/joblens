@@ -69,3 +69,5 @@ class RAGService:
             chunks_used=len(chunks),
             retrieval_scores=scores
         ) 
+
+
