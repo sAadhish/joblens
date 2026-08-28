@@ -1,4 +1,6 @@
-from typing import TypedDict,Optional
+from typing import Annotated , TypedDict ,Optional
+from langchain_core.messages import BaseMessage
+from langgraph.graph.message import add_messages
 
 class RAGState(TypedDict):
     question: str
@@ -14,5 +16,19 @@ class RAGState(TypedDict):
     answer_quality: str    
     iteration_count: int   
     max_iterations: int  
+
+
+class ConversationState(TypedDict):
+
+    messages: Annotated[list[BaseMessage], add_messages]
+    chat_history: list                    
+    question: str
+    source_label: Optional[str]
+    retrieved_chunks: Annotated[list, lambda x, y: y]  # replace, not accumulate
+    chunk_sources: Annotated[list, lambda x, y: y]
+    sources: Annotated[list, lambda x, y: y]
+    chunks_used: int
+    answer: str
+    error: Optional[str]
 
 

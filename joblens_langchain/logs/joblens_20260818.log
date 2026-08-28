@@ -1,0 +1,446 @@
+2026-08-18 09:35:04,571 | INFO | rag_graph | Self-correcting RAG graph compiled
+2026-08-18 09:35:04,571 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled
+2026-08-18 09:35:05,320 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2026-08-18 09:35:08,749 | INFO | model | No device provided, using mps
+2026-08-18 09:35:09,573 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:35:09,761 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-18 09:35:10,094 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:35:10,622 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-18 09:35:10,625 | INFO | model | Loading SentenceTransformer model from BAAI/bge-base-en-v1.5.
+2026-08-18 09:35:11,645 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:35:11,645 | WARNING | _http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-08-18 09:35:12,031 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-18 09:35:12,973 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:35:13,650 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md "HTTP/1.1 200 OK"
+2026-08-18 09:35:14,130 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:35:14,250 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-18 09:35:14,528 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:35:14,602 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-08-18 09:35:14,915 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:35:15,301 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:35:15,372 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-18 09:35:15,938 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:35:16,398 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:35:16,672 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:35:16,951 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:35:17,235 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:35:17,280 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-18 09:35:17,611 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:35:17,780 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-18 09:35:18,073 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:35:18,203 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-18 09:35:18,474 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:35:18,525 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-18 09:35:18,789 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-08-18 09:35:19,085 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-08-18 09:35:19,776 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:35:19,816 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-08-18 09:35:20,100 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+2026-08-18 09:35:21,562 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2026-08-18 09:35:21,575 | INFO | qdrant_service | Using existing collection: Joblens
+2026-08-18 09:35:21,791 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-18 09:35:22,005 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-18 09:35:22,261 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-18 09:35:22,465 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-18 09:35:22,671 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens "HTTP/1.1 200 OK"
+2026-08-18 09:35:23,046 | INFO | qdrant_service | QdrantService initialized using collection 'Joblens'
+2026-08-18 09:35:23,116 | INFO | nodes | [retrieve_node] question='What Python frameworks does Sarvam AI require?' source='Sarvam AI JD'
+2026-08-18 09:35:23,715 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:35:23,720 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-18 09:35:23,720 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:35:23,731 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:35:24,158 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:35:24,176 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:35:24,178 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=0
+2026-08-18 09:35:24,178 | INFO | rag_graph | [should_continue] routing to reformulate (iteration 1)
+2026-08-18 09:35:24,279 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:35:24,290 | ERROR | nodes | [reformulate_node] failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:35:24,291 | INFO | nodes | [retrieve_node] question='What Python frameworks does Sarvam AI require?' source='Sarvam AI JD'
+2026-08-18 09:35:24,676 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:35:24,678 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-18 09:35:24,678 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:35:24,681 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:35:24,788 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:35:24,798 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:35:24,800 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=1
+2026-08-18 09:35:24,801 | INFO | rag_graph | [should_continue] routing to reformulate (iteration 2)
+2026-08-18 09:35:24,940 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:35:24,950 | ERROR | nodes | [reformulate_node] failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:35:24,951 | INFO | nodes | [retrieve_node] question='What Python frameworks does Sarvam AI require?' source='Sarvam AI JD'
+2026-08-18 09:35:25,215 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:35:25,222 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-18 09:35:25,223 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:35:25,225 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:35:25,351 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:35:25,366 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:35:25,367 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=2
+2026-08-18 09:35:25,368 | INFO | rag_graph | [should_continue] routing to END (quality=bad)
+2026-08-18 09:35:25,380 | INFO | nodes | [retrieve_node] question='What is the annual bonus structure?' source='Sarvam AI JD'
+2026-08-18 09:35:25,702 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:35:25,704 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-18 09:35:25,704 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:35:25,706 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:35:25,778 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:35:25,789 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:35:25,791 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=0
+2026-08-18 09:35:25,791 | INFO | rag_graph | [should_continue] routing to reformulate (iteration 1)
+2026-08-18 09:35:25,868 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:35:25,878 | ERROR | nodes | [reformulate_node] failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:35:25,880 | INFO | nodes | [retrieve_node] question='What is the annual bonus structure?' source='Sarvam AI JD'
+2026-08-18 09:35:26,297 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:35:26,299 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-18 09:35:26,299 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:35:26,301 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:35:26,391 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:35:26,402 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:35:26,404 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=1
+2026-08-18 09:35:26,404 | INFO | rag_graph | [should_continue] routing to END (quality=bad)
+2026-08-18 09:35:26,408 | INFO | nodes | [retrieve_node] question='What is the stock option vesting schedule?' source='Freshworks JD'
+2026-08-18 09:35:26,876 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:35:26,877 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Freshworks JD)
+2026-08-18 09:35:26,877 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:35:26,879 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:35:26,960 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:35:26,969 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:35:26,970 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=0
+2026-08-18 09:35:26,970 | INFO | rag_graph | [should_continue] routing to reformulate (iteration 1)
+2026-08-18 09:35:27,055 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:35:27,066 | ERROR | nodes | [reformulate_node] failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:35:27,067 | INFO | nodes | [retrieve_node] question='What is the stock option vesting schedule?' source='Freshworks JD'
+2026-08-18 09:35:27,488 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:35:27,489 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Freshworks JD)
+2026-08-18 09:35:27,489 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:35:27,491 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:35:27,591 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:35:27,600 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:35:27,601 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=1
+2026-08-18 09:35:27,601 | INFO | rag_graph | [should_continue] routing to END (quality=bad)
+2026-08-18 09:43:02,743 | INFO | rag_graph | Self-correcting RAG graph compiled
+2026-08-18 09:43:02,743 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled
+2026-08-18 09:43:03,438 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2026-08-18 09:43:05,658 | INFO | model | No device provided, using mps
+2026-08-18 09:43:06,242 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:43:06,244 | WARNING | _http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-08-18 09:43:06,320 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-18 09:43:06,631 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:43:06,683 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-18 09:43:06,686 | INFO | model | Loading SentenceTransformer model from BAAI/bge-base-en-v1.5.
+2026-08-18 09:43:07,161 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:43:07,240 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-18 09:43:07,673 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:43:07,720 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md "HTTP/1.1 200 OK"
+2026-08-18 09:43:08,071 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:43:08,136 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-18 09:43:08,594 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:43:08,647 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-08-18 09:43:08,940 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:43:09,413 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:43:09,466 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-18 09:43:10,029 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:43:10,335 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:43:10,613 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:43:11,052 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:43:11,462 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:43:11,520 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-18 09:43:11,811 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:43:11,865 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-18 09:43:12,281 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:43:12,351 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-18 09:43:12,793 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:43:12,840 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-18 09:43:13,305 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-08-18 09:43:13,715 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-08-18 09:43:14,049 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:43:14,123 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-08-18 09:43:14,433 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+2026-08-18 09:43:16,280 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2026-08-18 09:43:16,297 | INFO | qdrant_service | Using existing collection: Joblens
+2026-08-18 09:43:16,581 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-18 09:43:16,888 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-18 09:43:17,298 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-18 09:43:17,543 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-18 09:43:17,737 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens "HTTP/1.1 200 OK"
+2026-08-18 09:43:18,174 | INFO | qdrant_service | QdrantService initialized using collection 'Joblens'
+2026-08-18 09:43:18,269 | INFO | nodes | [retrieve_node] question='What Python frameworks does Sarvam AI require?' source='Sarvam AI JD'
+2026-08-18 09:43:18,731 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:43:18,734 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-18 09:43:18,734 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:43:18,743 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:43:18,993 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:43:19,011 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:43:19,012 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=0
+2026-08-18 09:43:19,013 | INFO | rag_graph | [should_continue] routing to reformulate (iteration 1)
+2026-08-18 09:43:19,125 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:43:19,134 | ERROR | nodes | [reformulate_node] failed: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:43:19,135 | INFO | nodes | [retrieve_node] question='What Python frameworks does Sarvam AI require?' source='Sarvam AI JD'
+2026-08-18 09:43:19,431 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:43:19,433 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-18 09:43:19,433 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:43:19,436 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:43:19,512 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:43:19,525 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:43:19,528 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=1
+2026-08-18 09:43:19,528 | INFO | rag_graph | [should_continue] routing to reformulate (iteration 2)
+2026-08-18 09:43:19,627 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:43:19,638 | ERROR | nodes | [reformulate_node] failed: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:43:19,640 | INFO | nodes | [retrieve_node] question='What Python frameworks does Sarvam AI require?' source='Sarvam AI JD'
+2026-08-18 09:43:19,917 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:43:19,919 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-18 09:43:19,920 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:43:19,922 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:43:19,995 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:43:20,016 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:43:20,018 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=2
+2026-08-18 09:43:20,019 | INFO | rag_graph | [should_continue] routing to END (quality=bad)
+2026-08-18 09:43:20,031 | INFO | nodes | [retrieve_node] question='What is the annual bonus structure?' source='Sarvam AI JD'
+2026-08-18 09:43:20,473 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:43:20,474 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-18 09:43:20,475 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:43:20,477 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:43:20,556 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:43:20,567 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:43:20,569 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=0
+2026-08-18 09:43:20,570 | INFO | rag_graph | [should_continue] routing to reformulate (iteration 1)
+2026-08-18 09:43:20,667 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:43:20,679 | ERROR | nodes | [reformulate_node] failed: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:43:20,680 | INFO | nodes | [retrieve_node] question='What is the annual bonus structure?' source='Sarvam AI JD'
+2026-08-18 09:43:21,243 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:43:21,244 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-18 09:43:21,244 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:43:21,246 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:43:21,417 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:43:21,428 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:43:21,430 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=1
+2026-08-18 09:43:21,430 | INFO | rag_graph | [should_continue] routing to END (quality=bad)
+2026-08-18 09:43:21,434 | INFO | nodes | [retrieve_node] question='What is the stock option vesting schedule?' source='Freshworks JD'
+2026-08-18 09:43:21,747 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:43:21,749 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Freshworks JD)
+2026-08-18 09:43:21,749 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:43:21,752 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:43:21,828 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:43:21,840 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:43:21,842 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=0
+2026-08-18 09:43:21,843 | INFO | rag_graph | [should_continue] routing to reformulate (iteration 1)
+2026-08-18 09:43:21,963 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:43:21,972 | ERROR | nodes | [reformulate_node] failed: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:43:21,974 | INFO | nodes | [retrieve_node] question='What is the stock option vesting schedule?' source='Freshworks JD'
+2026-08-18 09:43:22,418 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:43:22,420 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Freshworks JD)
+2026-08-18 09:43:22,421 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:43:22,424 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:43:22,512 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:43:22,524 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:43:22,526 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=1
+2026-08-18 09:43:22,526 | INFO | rag_graph | [should_continue] routing to END (quality=bad)
+2026-08-18 09:49:06,767 | INFO | rag_graph | Self-correcting RAG graph compiled
+2026-08-18 09:49:06,768 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled
+2026-08-18 09:49:08,185 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2026-08-18 09:49:09,977 | INFO | model | No device provided, using mps
+2026-08-18 09:49:10,575 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:49:10,576 | WARNING | _http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-08-18 09:49:10,637 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-18 09:49:10,948 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:49:10,989 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-18 09:49:10,991 | INFO | model | Loading SentenceTransformer model from BAAI/bge-base-en-v1.5.
+2026-08-18 09:49:11,265 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:49:11,312 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-18 09:49:11,747 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:49:11,790 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md "HTTP/1.1 200 OK"
+2026-08-18 09:49:12,067 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:49:12,109 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-18 09:49:12,387 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:49:12,438 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-08-18 09:49:12,930 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:49:13,339 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:49:13,376 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-18 09:49:13,827 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:49:14,262 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:49:14,569 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:49:14,978 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:49:15,254 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:49:15,318 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-18 09:49:15,797 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:49:15,870 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-18 09:49:16,309 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:49:16,354 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-18 09:49:16,718 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:49:16,791 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-18 09:49:17,230 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-08-18 09:49:17,538 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-08-18 09:49:18,050 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:49:18,117 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-08-18 09:49:18,425 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+2026-08-18 09:49:20,303 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2026-08-18 09:49:20,312 | INFO | qdrant_service | Using existing collection: Joblens
+2026-08-18 09:49:20,610 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-18 09:49:20,917 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-18 09:49:21,224 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-18 09:49:21,530 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-18 09:49:21,838 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens "HTTP/1.1 200 OK"
+2026-08-18 09:49:22,233 | INFO | qdrant_service | QdrantService initialized using collection 'Joblens'
+2026-08-18 09:49:22,312 | INFO | nodes | [retrieve_node] question='What Python frameworks does Sarvam AI require?' source='Sarvam AI JD'
+2026-08-18 09:49:22,965 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:49:22,967 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-18 09:49:22,968 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:49:22,976 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:49:23,220 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:49:23,232 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:49:23,233 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=0
+2026-08-18 09:49:23,234 | INFO | rag_graph | [should_continue] routing to reformulate (iteration 1)
+2026-08-18 09:49:23,307 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:49:23,316 | ERROR | nodes | [reformulate_node] failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:49:23,317 | INFO | nodes | [retrieve_node] question='What Python frameworks does Sarvam AI require?' source='Sarvam AI JD'
+2026-08-18 09:49:23,555 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:49:23,556 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-18 09:49:23,556 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:49:23,558 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:49:23,657 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:49:23,667 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:49:23,668 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=1
+2026-08-18 09:49:23,669 | INFO | rag_graph | [should_continue] routing to reformulate (iteration 2)
+2026-08-18 09:49:23,738 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:49:23,747 | ERROR | nodes | [reformulate_node] failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:49:23,748 | INFO | nodes | [retrieve_node] question='What Python frameworks does Sarvam AI require?' source='Sarvam AI JD'
+2026-08-18 09:49:24,094 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:49:24,096 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-18 09:49:24,096 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:49:24,098 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:49:24,189 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:49:24,201 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:49:24,202 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=2
+2026-08-18 09:49:24,202 | INFO | rag_graph | [should_continue] routing to END (quality=bad)
+2026-08-18 09:49:24,208 | INFO | nodes | [retrieve_node] question='What is the annual bonus structure?' source='Sarvam AI JD'
+2026-08-18 09:49:24,541 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:49:24,543 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-18 09:49:24,543 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:49:24,545 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:49:24,616 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:49:24,625 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:49:24,626 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=0
+2026-08-18 09:49:24,627 | INFO | rag_graph | [should_continue] routing to reformulate (iteration 1)
+2026-08-18 09:49:24,699 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:49:24,708 | ERROR | nodes | [reformulate_node] failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:49:24,709 | INFO | nodes | [retrieve_node] question='What is the annual bonus structure?' source='Sarvam AI JD'
+2026-08-18 09:49:25,118 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:49:25,119 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-18 09:49:25,119 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:49:25,121 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:49:25,236 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:49:25,245 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:49:25,246 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=1
+2026-08-18 09:49:25,246 | INFO | rag_graph | [should_continue] routing to END (quality=bad)
+2026-08-18 09:49:25,248 | INFO | nodes | [retrieve_node] question='What is the stock option vesting schedule?' source='Freshworks JD'
+2026-08-18 09:49:25,853 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:49:25,854 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Freshworks JD)
+2026-08-18 09:49:25,855 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:49:25,857 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:49:25,925 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:49:25,935 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:49:25,936 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=0
+2026-08-18 09:49:25,936 | INFO | rag_graph | [should_continue] routing to reformulate (iteration 1)
+2026-08-18 09:49:26,026 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:49:26,035 | ERROR | nodes | [reformulate_node] failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:49:26,036 | INFO | nodes | [retrieve_node] question='What is the stock option vesting schedule?' source='Freshworks JD'
+2026-08-18 09:49:26,289 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:49:26,291 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Freshworks JD)
+2026-08-18 09:49:26,291 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:49:26,294 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:49:26,367 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 09:49:26,377 | ERROR | nodes | [generate_node] LLM call failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 09:49:26,378 | INFO | nodes | [evaluate_node] quality=BAD reason=too_short iteration=1
+2026-08-18 09:49:26,378 | INFO | rag_graph | [should_continue] routing to END (quality=bad)
+2026-08-18 09:52:53,920 | INFO | rag_graph | Self-correcting RAG graph compiled
+2026-08-18 09:52:53,921 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled
+2026-08-18 09:52:54,667 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2026-08-18 09:52:56,690 | INFO | model | No device provided, using mps
+2026-08-18 09:52:57,296 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:52:57,359 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-18 09:52:57,673 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:52:57,674 | WARNING | _http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-08-18 09:52:57,716 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-18 09:52:57,718 | INFO | model | Loading SentenceTransformer model from BAAI/bge-base-en-v1.5.
+2026-08-18 09:52:57,998 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:52:58,043 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-08-18 09:52:58,525 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:52:58,610 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md "HTTP/1.1 200 OK"
+2026-08-18 09:52:58,951 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:52:58,997 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-08-18 09:52:59,549 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:52:59,602 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-08-18 09:52:59,918 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:53:00,231 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:53:00,283 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-18 09:53:00,983 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:53:01,392 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:53:01,673 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:53:01,944 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-18 09:53:02,416 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:53:02,483 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-18 09:53:02,798 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:53:02,851 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-18 09:53:03,218 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:53:03,279 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-08-18 09:53:03,588 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:53:03,637 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-08-18 09:53:03,915 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-08-18 09:53:04,260 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-08-18 09:53:04,771 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-08-18 09:53:04,813 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-08-18 09:53:05,109 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+2026-08-18 09:53:06,923 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2026-08-18 09:53:06,933 | INFO | qdrant_service | Using existing collection: Joblens
+2026-08-18 09:53:07,179 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-18 09:53:07,536 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-18 09:53:07,843 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-18 09:53:08,095 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-08-18 09:53:08,457 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens "HTTP/1.1 200 OK"
+2026-08-18 09:53:08,827 | INFO | qdrant_service | QdrantService initialized using collection 'Joblens'
+2026-08-18 09:53:08,897 | INFO | nodes | [retrieve_node] question='What Python frameworks does Sarvam AI require?' source='Sarvam AI JD'
+2026-08-18 09:53:09,373 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:53:09,378 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-18 09:53:09,379 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:53:09,389 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:53:10,408 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-18 09:53:10,435 | INFO | nodes | [generate_node] answer generated (80 chars)
+2026-08-18 09:53:10,436 | INFO | nodes | [evaluate_node] quality=GOOD iteration=0
+2026-08-18 09:53:10,437 | INFO | rag_graph | [should_continue] routing to END (quality=good)
+2026-08-18 09:53:10,446 | INFO | nodes | [retrieve_node] question='What is the annual bonus structure?' source='Sarvam AI JD'
+2026-08-18 09:53:10,813 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:53:10,815 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-18 09:53:10,815 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:53:10,818 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:53:11,424 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-18 09:53:11,430 | INFO | nodes | [generate_node] answer generated (47 chars)
+2026-08-18 09:53:11,432 | INFO | nodes | [evaluate_node] quality=BAD reason=refusal iteration=0
+2026-08-18 09:53:11,433 | INFO | rag_graph | [should_continue] routing to reformulate (iteration 1)
+2026-08-18 09:53:12,758 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-18 09:53:12,765 | INFO | nodes | [reformulate_node] 'What is the annual bonus structure?' → '"annual bonus structure" OR "annual bonu'
+2026-08-18 09:53:12,767 | INFO | nodes | [retrieve_node] question='"annual bonus structure" OR "annual bonus plan" OR' source='Sarvam AI JD'
+2026-08-18 09:53:13,563 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:53:13,565 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-08-18 09:53:13,565 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:53:13,568 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:53:14,291 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-18 09:53:14,294 | INFO | nodes | [generate_node] answer generated (47 chars)
+2026-08-18 09:53:14,295 | INFO | nodes | [evaluate_node] quality=BAD reason=refusal iteration=1
+2026-08-18 09:53:14,295 | INFO | rag_graph | [should_continue] routing to END (quality=bad)
+2026-08-18 09:53:14,298 | INFO | nodes | [retrieve_node] question='What is the stock option vesting schedule?' source='Freshworks JD'
+2026-08-18 09:53:14,602 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:53:14,604 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Freshworks JD)
+2026-08-18 09:53:14,604 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:53:14,606 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:53:15,215 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-18 09:53:15,220 | INFO | nodes | [generate_node] answer generated (47 chars)
+2026-08-18 09:53:15,222 | INFO | nodes | [evaluate_node] quality=BAD reason=refusal iteration=0
+2026-08-18 09:53:15,222 | INFO | rag_graph | [should_continue] routing to reformulate (iteration 1)
+2026-08-18 09:53:16,751 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-18 09:53:16,756 | INFO | nodes | [reformulate_node] 'What is the stock option vesting schedul' → 'stock option vesting schedule equity com'
+2026-08-18 09:53:16,758 | INFO | nodes | [retrieve_node] question='stock option vesting schedule equity compensation ' source='Freshworks JD'
+2026-08-18 09:53:17,240 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-08-18 09:53:17,241 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Freshworks JD)
+2026-08-18 09:53:17,241 | INFO | nodes | [retrieve_node] found 1 chunks
+2026-08-18 09:53:17,243 | INFO | nodes | [generate_node] generating from 1 chunks
+2026-08-18 09:53:18,390 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-18 09:53:18,397 | INFO | nodes | [generate_node] answer generated (47 chars)
+2026-08-18 09:53:18,399 | INFO | nodes | [evaluate_node] quality=BAD reason=refusal iteration=1
+2026-08-18 09:53:18,400 | INFO | rag_graph | [should_continue] routing to END (quality=bad)
