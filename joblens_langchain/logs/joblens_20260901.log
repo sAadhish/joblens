@@ -1,0 +1,125 @@
+2026-09-01 13:32:59,377 | INFO | career_agent_graph | Career agent compiled: routing + memory + self-correction
+2026-09-01 13:32:59,377 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled
+2026-09-01 13:32:59,488 | INFO | nodes | [agent_load_history] 0 messages in history
+2026-09-01 13:33:00,056 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2026-09-01 13:33:03,535 | INFO | model | No device provided, using mps
+2026-09-01 13:33:03,925 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-01 13:33:03,949 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-09-01 13:33:04,191 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-01 13:33:04,216 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-09-01 13:33:04,218 | INFO | model | Loading SentenceTransformer model from BAAI/bge-base-en-v1.5.
+2026-09-01 13:33:04,458 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-01 13:33:04,458 | WARNING | _http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-01 13:33:04,480 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-09-01 13:33:04,719 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-09-01 13:33:04,741 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md "HTTP/1.1 200 OK"
+2026-09-01 13:33:04,980 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-01 13:33:05,004 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-09-01 13:33:05,248 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-01 13:33:05,274 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-09-01 13:33:05,516 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-09-01 13:33:05,873 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-01 13:33:05,898 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-09-01 13:33:06,304 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-09-01 13:33:06,546 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-01 13:33:06,896 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-01 13:33:07,137 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-01 13:33:07,407 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-01 13:33:07,433 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-01 13:33:07,677 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-01 13:33:07,700 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-09-01 13:33:07,945 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-01 13:33:07,968 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-09-01 13:33:08,212 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-01 13:33:08,239 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-01 13:33:08,486 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-01 13:33:08,844 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-01 13:33:09,249 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-01 13:33:09,274 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-09-01 13:33:09,531 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+2026-09-01 13:33:10,934 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2026-09-01 13:33:10,948 | INFO | qdrant_service | Using existing collection: Joblens
+2026-09-01 13:33:11,145 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-09-01 13:33:11,352 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-09-01 13:33:11,573 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-09-01 13:33:11,770 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-09-01 13:33:11,961 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens "HTTP/1.1 200 OK"
+2026-09-01 13:33:12,341 | INFO | qdrant_service | QdrantService initialized using collection 'Joblens'
+2026-09-01 13:33:12,403 | INFO | nodes | [classify_node] classifying: 'What does the Haptik AI Engineer role require?'
+2026-09-01 13:33:12,940 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-01 13:33:12,965 | INFO | nodes | [classify_node] type=jd company=Haptik
+2026-09-01 13:33:12,966 | INFO | career_agent_graph | [route_by_type] jd → jd_retrieve
+2026-09-01 13:33:12,971 | INFO | nodes | [jd_retrieve] company='Haptik' source='Haptik JD'
+2026-09-01 13:33:13,220 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-09-01 13:33:13,222 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Haptik JD)
+2026-09-01 13:33:13,758 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-01 13:33:13,764 | INFO | nodes | [agent_generate] 380 chars | history: 0
+2026-09-01 13:33:13,767 | INFO | nodes | [agent_evaluate] quality=good iteration=0
+2026-09-01 13:33:13,789 | INFO | nodes | [agent_load_history] 2 messages in history
+2026-09-01 13:33:13,791 | INFO | nodes | [classify_node] classifying: 'What BI tools do I have experience with?'
+2026-09-01 13:33:14,166 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-01 13:33:14,170 | INFO | nodes | [classify_node] type=resume company=none
+2026-09-01 13:33:14,170 | INFO | career_agent_graph | [route_by_type] resume → resume_retrieve
+2026-09-01 13:33:14,173 | INFO | nodes | [resume_retrieve] question='What BI tools do I have experience with?'
+2026-09-01 13:33:14,438 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-09-01 13:33:14,439 | INFO | qdrant_service | Retrieved 0 chunks for query (source: My Resume)
+2026-09-01 13:33:15,003 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-01 13:33:15,006 | INFO | nodes | [agent_generate] 47 chars | history: 2
+2026-09-01 13:33:15,009 | INFO | nodes | [agent_evaluate] quality=bad iteration=0
+2026-09-01 13:33:15,869 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-01 13:33:15,874 | INFO | nodes | [agent_reformulate] → 'BI tools experience Tableau Power BI Looker QlikVi'
+2026-09-01 13:33:15,877 | INFO | nodes | [classify_node] classifying: 'BI tools experience Tableau Power BI Looker QlikVi'
+2026-09-01 13:33:16,564 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-01 13:33:16,570 | INFO | nodes | [classify_node] type=resume company=none
+2026-09-01 13:33:16,571 | INFO | career_agent_graph | [route_by_type] resume → resume_retrieve
+2026-09-01 13:33:16,573 | INFO | nodes | [resume_retrieve] question='BI tools experience Tableau Power BI Looker QlikVi'
+2026-09-01 13:33:16,855 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-09-01 13:33:16,856 | INFO | qdrant_service | Retrieved 0 chunks for query (source: My Resume)
+2026-09-01 13:33:17,118 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-01 13:33:17,122 | INFO | nodes | [agent_generate] 47 chars | history: 2
+2026-09-01 13:33:17,125 | INFO | nodes | [agent_evaluate] quality=bad iteration=1
+2026-09-01 13:33:17,132 | INFO | nodes | [agent_load_history] 6 messages in history
+2026-09-01 13:33:17,134 | INFO | nodes | [classify_node] classifying: 'Compare the Sarvam AI and Freshworks roles'
+2026-09-01 13:33:17,582 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-01 13:33:17,586 | INFO | nodes | [classify_node] type=comparison company=none
+2026-09-01 13:33:17,588 | INFO | career_agent_graph | [route_by_type] comparison → general_retrieve
+2026-09-01 13:33:17,592 | INFO | nodes | [general_retrieve] question='Compare the Sarvam AI and Freshworks roles'
+2026-09-01 13:33:17,840 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-09-01 13:33:17,842 | INFO | qdrant_service | Retrieved 3 chunks for query (source: None)
+2026-09-01 13:33:19,492 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-01 13:33:19,500 | INFO | nodes | [agent_generate] 2237 chars | history: 6
+2026-09-01 13:33:19,503 | INFO | nodes | [agent_evaluate] quality=good iteration=0
+2026-09-01 13:33:19,510 | INFO | nodes | [agent_load_history] 0 messages in history
+2026-09-01 13:33:19,511 | INFO | nodes | [classify_node] classifying: 'What does the Freshworks Data Analyst role need?'
+2026-09-01 13:33:20,076 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-01 13:33:20,078 | INFO | nodes | [classify_node] type=jd company=Freshworks
+2026-09-01 13:33:20,078 | INFO | career_agent_graph | [route_by_type] jd → jd_retrieve
+2026-09-01 13:33:20,079 | INFO | nodes | [jd_retrieve] company='Freshworks' source='Freshworks JD'
+2026-09-01 13:33:20,288 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-09-01 13:33:20,290 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Freshworks JD)
+2026-09-01 13:33:21,018 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-01 13:33:21,022 | INFO | nodes | [agent_generate] 282 chars | history: 0
+2026-09-01 13:33:21,024 | INFO | nodes | [agent_evaluate] quality=good iteration=0
+2026-09-01 13:33:21,031 | INFO | nodes | [agent_load_history] 2 messages in history
+2026-09-01 13:33:21,032 | INFO | nodes | [classify_node] classifying: 'Do I have the skills for that role based on my bac'
+2026-09-01 13:33:21,489 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-01 13:33:21,494 | INFO | nodes | [classify_node] type=resume company=none
+2026-09-01 13:33:21,495 | INFO | career_agent_graph | [route_by_type] resume → resume_retrieve
+2026-09-01 13:33:21,497 | INFO | nodes | [resume_retrieve] question='Do I have the skills for that role based on my bac'
+2026-09-01 13:33:21,751 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-09-01 13:33:21,752 | INFO | qdrant_service | Retrieved 0 chunks for query (source: My Resume)
+2026-09-01 13:33:22,323 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-01 13:33:22,329 | INFO | nodes | [agent_generate] 47 chars | history: 2
+2026-09-01 13:33:22,331 | INFO | nodes | [agent_evaluate] quality=bad iteration=0
+2026-09-01 13:33:23,077 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-01 13:33:23,082 | INFO | nodes | [agent_reformulate] → 'skill assessment for role requirements based on my'
+2026-09-01 13:33:23,085 | INFO | nodes | [classify_node] classifying: 'skill assessment for role requirements based on my'
+2026-09-01 13:33:23,659 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-01 13:33:23,665 | INFO | nodes | [classify_node] type=resume company=none
+2026-09-01 13:33:23,667 | INFO | career_agent_graph | [route_by_type] resume → resume_retrieve
+2026-09-01 13:33:23,668 | INFO | nodes | [resume_retrieve] question='skill assessment for role requirements based on my'
+2026-09-01 13:33:23,919 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-09-01 13:33:23,921 | INFO | qdrant_service | Retrieved 0 chunks for query (source: My Resume)
+2026-09-01 13:33:24,550 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-01 13:33:24,555 | INFO | nodes | [agent_generate] 47 chars | history: 2
+2026-09-01 13:33:24,558 | INFO | nodes | [agent_evaluate] quality=bad iteration=1

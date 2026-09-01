@@ -1,9 +1,3 @@
-# ===================================
-# RAG GRAPH
-# Wires nodes together into a runnable graph.
-# This file only does assembly — no business logic here.
-# ===================================
-
 from langgraph.graph import StateGraph, START, END
 from graphs.state import RAGState
 from graphs.nodes import retrieve_node, generate_node , evaluate_node,reformulate_node
