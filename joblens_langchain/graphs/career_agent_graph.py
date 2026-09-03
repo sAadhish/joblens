@@ -20,14 +20,11 @@ from logger import logger
 
 
 # -------------------------------------------------------
-# ROUTING FUNCTIONS — conditional edges
+# ROUTING FUNCTIONS 
 # -------------------------------------------------------
 
 def route_by_type(state: AgentState) -> str:
-    """
-    Called after classify_node.
-    Routes to the right retrieval node based on question type.
-    """
+
     q_type = state.get("question_type", "general")
 
     routes = {
@@ -43,7 +40,6 @@ def route_by_type(state: AgentState) -> str:
 
 
 def should_continue(state: AgentState) -> str:
-    """Called after evaluate_node."""
     quality = state.get("answer_quality", "good")
     iteration = state.get("iteration_count", 0)
     max_iter = state.get("max_iterations", 2)
@@ -58,7 +54,10 @@ def should_continue(state: AgentState) -> str:
 # -------------------------------------------------------
 
 def build_career_agent():
-    graph = StateGraph(AgentState)
+    graph = StateGraph(AgentState,
+                       input=AgentState,
+                       output=AgentState
+                       )
 
     # Add all nodes
     graph.add_node("load_history", agent_load_history)
@@ -70,11 +69,9 @@ def build_career_agent():
     graph.add_node("evaluate", agent_evaluate_node)
     graph.add_node("reformulate", agent_reformulate_node)
 
-    # Fixed edges
     graph.add_edge(START, "load_history")
     graph.add_edge("load_history", "classify")
 
-    # Conditional routing after classify
     graph.add_conditional_edges(
         "classify",
         route_by_type,
@@ -85,7 +82,6 @@ def build_career_agent():
         }
     )
 
-    # All retrieve nodes flow into generate
     graph.add_edge("jd_retrieve", "generate")
     graph.add_edge("resume_retrieve", "generate")
     graph.add_edge("general_retrieve", "generate")

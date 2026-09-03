@@ -8,30 +8,26 @@ setup_langsmith()
 
 
 def ask(thread_id: str, question: str, max_iterations: int = 2):
-    config = {"configurable": {"thread_id": thread_id}}
-    result = career_agent.invoke(
+    config={"configurable":{"thread_id":thread_id}}
+    final_state=None
+
+    
+    for state in career_agent.stream(
         {
-            "question": question,
-            "source_label": None,
-            "messages": [],
-            "chat_history": [],
-            "question_type": "",
-            "classified_company": "",
-            "original_question": question,
-            "reformulated_question": question,
-            "retrieved_chunks": [],
-            "chunk_sources": [],
-            "sources": [],
-            "chunks_used": 0,
-            "answer": "",
-            "answer_quality": "",
-            "iteration_count": 0,
-            "max_iterations": max_iterations,
-            "error": None
+        "question": question,
+        "original_question": question,
+        "reformulated_question": question,
+        "iteration_count": 0,
+        "max_iterations": max_iterations,
+        "answer_quality": "",
+        "answer": "",
         },
-        config=config
-    )
-    return result
+        config=config,
+        stream_mode="values"
+    ):
+
+        final_state=state
+    return final_state
 
 
 print("=" * 55)

@@ -42,7 +42,7 @@ class AgentState(TypedDict):
     source_label: Optional[str]
 
     # Classification result
-    question_type: str          # "jd", "resume", "comparison", "general"
+    question_type: str          
     classified_company: str     # extracted company name if question is about a JD
 
      # Retrieval results
