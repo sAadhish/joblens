@@ -5,7 +5,8 @@ from services.llm_service import LLMService
 from prompts.rag_prompt import RAGPrompt
 from models.schemas import (RetrievedChunk,RAGResponse)
 from config import Config
-from logger import logger
+import logging
+logger = logging.getLogger(__name__)
 
 class RAGService:
 

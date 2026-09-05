@@ -6,7 +6,10 @@ from qdrant_client.http.models import PayloadSchemaType
 from models.schemas import DocumentChunk, RetrievedChunk, IndexingResult
 from vectorstore.embedding_service import EmbeddingService
 from config import Config
-from logger import logger
+#from logger import logger
+import logging
+
+logger = logging.getLogger(__name__)
 
 class QdrantService:
 

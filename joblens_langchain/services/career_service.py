@@ -10,6 +10,7 @@ from services.rag_service import RAGService
 from models.schemas import RAGResponse, IndexingResult
 from config import Config
 import logging
+logger = logging.getLogger(__name__)
 import tempfile
 import os
 

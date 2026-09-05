@@ -12,8 +12,8 @@ from services.llm_service import LLMService
 from models.schemas import RAGResponse
 from callbacks.logging_callback import JobLensCallbackHandler
 from config import Config
-from logger import logger
-
+import logging
+logger = logging.getLogger(__name__)
 
 class MemoryRAGService:
     
