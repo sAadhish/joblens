@@ -105,3 +105,5 @@
 2026-09-08 09:26:47,092 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Freshworks JD)
 2026-09-08 09:26:48,628 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2026-09-08 09:26:48,630 | INFO | server | [MCP:check_skill_gap] company='Freshworks'
+2026-09-08 09:53:40,460 | INFO | career_agent_graph | Career agent compiled: routing + memory + self-correction
+2026-09-08 09:53:40,461 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled

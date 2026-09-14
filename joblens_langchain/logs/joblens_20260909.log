@@ -1,0 +1,2 @@
+2026-09-09 23:35:14,957 | INFO | career_agent_graph | Career agent compiled: routing + memory + self-correction
+2026-09-09 23:35:14,959 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled

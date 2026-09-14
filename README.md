@@ -1,157 +1,127 @@
-# JobLens 🔍
-### AI-Powered Job Market Intelligence Platform
+# JobLens — AI Job Market Intelligence Platform
 
-> Built as part of a structured 100-day GenAI engineering journey — from zero to production-ready AI systems.
-
----
-
-## What is JobLens?
-
-JobLens is a production-grade AI system that helps candidates make smarter job decisions using semantic search, RAG, and LLM-powered analysis.
-
-**Not another resume analyzer.** JobLens combines vector search, metadata filtering, and AI reasoning to give you intelligence that keyword-based job platforms can't.
+> Built across a structured 100-day GenAI engineering journey.
+> Two implementations, one project: hand-built RAG and LangChain/LangGraph.
 
 ---
 
-## Features
+## Architecture Overview
 
-| Feature                                                        | Status | Tech Used |
-|----------------------------------------------------------------|--------|-----------|
-| JD Analyzer — extract structured data from any JD              | ✅ Live | Groq, Llama 3.3 70B |
-| Skill Gap Analyzer — compare your profile vs JD                | ✅ Live | Structured JSON output |
-| Semantic Job Matching — find best role by meaning              | ✅ Live | Sentence Transformers,   ChromaDB |
-| Metadata Filtering — filter by location, experience, remote    | ✅ Live | ChromaDB |
-| AI Skill Gap with Readiness Score                              | ✅ Live | RAG + LLM |
-| Multi-document RAG system | 🔨 Building | LangChain, ChromaDB  |
-| AI Career Agent | 🔜 Coming | LangChain Agents |
-| Full REST API | 🔜 Coming | FastAPI |
-| Production Deployment | 🔜 Coming | Docker |
+┌─────────────────────────────────────────────────────────┐
+│ USER INTERFACES │
+│ CLI (career_assistant.py) │ Claude Desktop (MCP) │
+└──────────────┬──────────────┴────────────┬──────────────┘
+↓ ↓
+┌──────────────────────────┐ ┌────────────────────────────┐
+│ LangGraph Career Agent │ │ MCP Server (FastMCP) │
+│ ├── classify_node │ │ ├── search_jobs tool │
+│ ├── jd_retrieve_node │ │ ├── answer_question tool │
+│ ├── resume_retrieve │ │ ├── check_skill_gap tool │
+│ ├── generate_node │ │ ├── companies resource │
+│ ├── evaluate_node │ │ ├── resume resource │
+│ └── reformulate_node │ │ └── jd/{company} resource│
+└──────────────┬────────────┘ └────────────┬───────────────┘
+└──────────────┬─────────────┘
+↓
+┌─────────────────────────────────────────────────────────┐
+│ RETRIEVAL LAYER │
+│ Qdrant Cloud (Vector DB) │ HuggingFace Embeddings │
+│ LangChain RAG Service │ Cross-encoder Reranking │
+└─────────────────────────────────────────────────────────┘
+↓
+┌─────────────────────────────────────────────────────────┐
+│ GENERATION LAYER │
+│ Groq API (Llama 3.3 70B) │ LangSmith Observability │
+└─────────────────────────────────────────────────────────┘
 
 
+## Two Implementations — One Project
 
----
-
-## Architecture
-
-```
-User Profile / Resume
-        ↓
-Embedding Engine (Sentence Transformers)
-        ↓
-Vector Search (ChromaDB + Cosine Similarity)
-        ↓
-Metadata Filtering (role, location, experience, remote)
-        ↓
-Top Matching JDs Retrieved
-        ↓
-LLM Analysis (Groq / Llama 3.3 70B)
-        ↓
-Skill Gap Report + Readiness Score + Advice
-```
-
----
-
-## Tech Stack
-
-```
-LLM              Groq API (Llama 3.3 70B)
-Embeddings       Sentence Transformers (all-MiniLM-L6-v2)
-Vector DB        ChromaDB
-Language         Python 3.11+
-API (coming)     FastAPI
-Deploy (coming)  Docker
-```
-
----
-
-## Project Structure
-
-```
-joblens/
-├── stage-1-core-genai/       ← LLMs, Embeddings, Vector DBs
-│   ├── day62_jd_analyzer/
-│   ├── day63_structured_output/
-│   ├── day64_embeddings/
-│   ├── day65_vector_db/
-│   ├── day66_metadata/
-│   └── day67_similarity_search/
-├── stage-2-rag/              ← RAG Systems (in progress)
-├── stage-3-agents/           ← AI Agents (coming)
-└── stage-4-production/       ← FastAPI + Docker (coming)
-```
-
----
-
-## 100-Day Journey
-
-This project is built day by day as part of a structured GenAI engineering path:
-
-| Stage | Days | Focus | Status |
-|---|---|---|---|
-| Stage 1 | 61–70 | Core GenAI — LLMs, Embeddings, Vector DBs | ✅ Complete |
-| Stage 2 | 71–85 | RAG Systems | 🔨 In Progress |
-| Stage 3 | 86–95 | AI Agents + Memory | 🔜 Coming |
-| Stage 4 | 96–100 | Production + Scaling | 🔜 Coming |
-
----
+| Feature | Hand-built (`joblens/`) | LangChain (`joblens_langchain/`) |
+|---------|------------------------|----------------------------------|
+| RAG Pipeline | Raw libraries | LangChain LCEL |
+| Vector DB | ChromaDB (local) | Qdrant Cloud |
+| Architecture | Functional | OOP (Services) |
+| Evaluation | Custom + RAGAS | RAGAS + LangSmith |
+| Agents | — | LangGraph |
+| Memory | — | Checkpointer |
+| MCP Server | — | FastMCP |
+| Score (RAGAS) | ~78% (with reranking) | 48% (baseline RAG) |
 
 ## Key Engineering Decisions
 
-**Why Groq over OpenAI?**
-Groq offers free tier with Llama 3.3 70B — a genuinely powerful open model. For a learning project that will scale to production, avoiding vendor lock-in early is the right call.
+**Why two implementations?**
+Built hand-built first to understand internals deeply.
+Refactored to LangChain after — can explain exactly what the framework abstracts and what it hides.
 
-**Why ChromaDB over Pinecone?**
-ChromaDB runs locally with zero setup. The concepts — collections, embeddings, metadata filters, cosine similarity — transfer directly to Pinecone or Qdrant in production. Learn locally, scale externally.
+**Why Qdrant over ChromaDB in production?**
+Purpose-built vector database with payload indexing, filtering at scale, and cloud hosting.
+ChromaDB is excellent for learning — Qdrant is what production runs.
 
-**Why cosine similarity over L2 distance?**
-For text embeddings, cosine similarity measures the angle between vectors — capturing semantic direction regardless of magnitude. L2 measures raw distance, which is less meaningful for high-dimensional text vectors.
+**Why LangGraph over LangChain AgentExecutor?**
+Full state visibility, debuggable node-by-node, supports conditional routing and loops.
+AgentExecutor is a black box — LangGraph is transparent.
 
-**Why metadata filtering before semantic search?**
-Pure semantic search on 10,000 JDs is noisy. Filtering by role type, experience, and location first reduces the search space to relevant candidates — then semantic ranking finds the best match within that space. Two-layer search beats one-layer search.
+**Why MCP over a custom API?**
+MCP is a universal standard — one server, any compatible client.
+Claude Desktop, Cursor, Cline, custom agents — all can call JobLens without custom integration code.
 
----
+**Why self-correcting RAG?**
+A system that detects its own failures and retries is more reliable than one that returns bad answers silently.
+The evaluate → reformulate → retry loop improves answer quality without user intervention.
+
+## Evaluation Results
+
+| Metric | Hand-built RAG | LangChain RAG |
+|--------|---------------|---------------|
+| Hit Rate | 100% | — |
+| MRR | 0.84 | — |
+| RAGAS Overall | ~78% | 48% |
+| Hand-built Eval | 85% | 69% |
+
+The gap: LangChain version lacks cross-encoder reranking and hybrid search.
+These are architectural choices, not framework limitations.
 
 ## Setup
 
 ```bash
 git clone https://github.com/sAadhish/joblens
 cd joblens
+
+# Hand-built version
+cd joblens
 pip install -r requirements.txt
-cp .env.example .env
-# Add your GROQ_API_KEY to .env
+cp .env.example .env  # add your keys
+python main.py
+
+# LangChain version
+cd joblens_langchain
+pip install -r requirements.txt
+cp .env.example .env  # add your keys
+python main.py        # index data
+python career_assistant.py  # run CLI
+
+# MCP Server (for Claude Desktop)
+python mcp_server/server.py
+# See mcp_server/DEMO.md for Claude Desktop setup
 ```
 
----
+## Tech Stack
 
-## About
+LLM : Groq API (Llama 3.3 70B)
+Embeddings : HuggingFace (BAAI/bge-base-en-v1.5)
+Vector DB : Qdrant Cloud + ChromaDB
+Orchestration: LangGraph (StateGraph + Checkpointer)
+Framework : LangChain LCEL + OOP services
+MCP : FastMCP (Claude Desktop integration)
+Evaluation : RAGAS + custom evaluator + LangSmith
+Observability: LangSmith tracing
+Language : Python 3.11+
+Deployment : Docker (Day 101)
 
-Built by [Aadhish](https://linkedin.com/in/aadhish) — BI Developer transitioning into GenAI Engineering.
-
-This repository documents real learning — not polished tutorials. Every decision, every bug, every fix is here.
-
-GitHub: [github.com/sAadhish](https://github.com/sAadhish)
-
-
-
-
-------------------
-gen-ai-masterclass/          ← root project
-├── stage-1-core-genai/      ← already done ✅
-│   ├── day62_jd_analyzer/
-│   ├── day63_structured_output/
-│   ├── day64_embeddings/
-│   ├── day65_vector_db/
-│   ├── day66_metadata/
-│   ├── day67_similarity_search/
-│   ├── day68_unified_pipeline/
-│   └── README.md
-│
-├── stage-2-rag/             ← create this
-│   └── day73a_loaders/      ← loaders go here
-│       ├── loaders.py
-│       └── test_loaders.py
-│
-├── .env
-├── .gitignore
-├── requirements.txt
-└── README.md
+## Branch Structure
+stage-1-core-genai → LLMs, embeddings, vector DB fundamentals
+stage-2-rag → RAG pipeline, evaluation, hybrid search
+stage-3-langchain → LangChain OOP, Qdrant, RAGAS
+stage-4-langgraph → LangGraph agents, memory, MCP server
+mcp → MCP server with Claude Desktop integration
