@@ -1,0 +1,11 @@
+cat > joblens/.gitignore <<'EOF'
+.env
+*.env
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+logs/
+*.log
+eval_results/
+EOF
