@@ -3,6 +3,7 @@ from api.schemas import HealthResponse, CompaniesResponse
 from joblens_langchain.services.career_service import CareerService
 from qdrant_client import QdrantClient
 from joblens_langchain.config import Config
+from api.cache import response_cache
 import logging
 
 router = APIRouter()
@@ -20,7 +21,9 @@ def get_service():
 async def health_check():
     try:
         client = QdrantClient(url=Config.QDRANT_URL, api_key=Config.QDRANT_API_KEY)
-        count=client.count(collection_name=Config.QDRANT_COLLECTION)
+        count = client.count( collection_name=Config.QDRANT_COLLECTION).count
+        cache_stats = response_cache.stats()
+        logger.info(f"Cache stats: {cache_stats}")
         return HealthResponse(
             status="healthy",
             qdrant_connected=True,
@@ -60,3 +63,9 @@ async def list_companies():
         return CompaniesResponse(companies=[], total=0)
     
 
+from joblens_langchain.prompts.registry import list_prompts
+
+@router.get("/prompts")
+async def get_prompt_versions():
+    """List all prompt versions currently deployed."""
+    return {"prompts": list_prompts()}

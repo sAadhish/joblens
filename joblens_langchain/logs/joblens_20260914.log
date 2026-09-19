@@ -159,3 +159,11 @@
 2026-09-14 21:30:59,855 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2026-09-14 21:30:59,861 | INFO | nodes | [agent_generate] 297 chars | history: 0
 2026-09-14 21:30:59,864 | INFO | nodes | [agent_evaluate] quality=good iteration=0
+2026-09-14 22:18:19,000 | INFO | career_agent_graph | Career agent compiled: routing + memory + self-correction
+2026-09-14 22:18:19,014 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled
+2026-09-14 22:20:43,009 | INFO | career_agent_graph | Career agent compiled: routing + memory + self-correction
+2026-09-14 22:20:43,009 | INFO | career_agent_graph | Career agent compiled: routing + memory + self-correction
+2026-09-14 22:20:43,011 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled
+2026-09-14 22:20:43,011 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled
+2026-09-14 22:36:53,255 | INFO | career_agent_graph | Career agent compiled: routing + memory + self-correction
+2026-09-14 22:36:53,256 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled

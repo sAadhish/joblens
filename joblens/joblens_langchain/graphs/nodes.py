@@ -211,7 +211,59 @@ def classify_node(state) -> dict:
 
     question = state["question"]
     logger.info(f"[classify_node] classifying: '{question[:50]}'")
+    classify_prompt = ChatPromptTemplate.from_template("""
+Classify: {question}
 
+Types: jd|resume|comparison|general
+If jd, extract company name.
+
+Reply ONLY:
+CATEGORY: <type>
+COMPANY: <name or none>
+""")
+
+    chain = classify_prompt | llm | parser
+
+    try:
+        result = chain.invoke({"question": question})
+        lines = result.strip().split("\n")
+
+        category = "general"
+        company = "none"
+
+        for line in lines:
+            if line.startswith("CATEGORY:"):
+                category = line.split(":", 1)[1].strip().lower()
+            elif line.startswith("COMPANY:"):
+                company = line.split(":", 1)[1].strip()
+
+        logger.info(f"[classify_node] type={category} company={company}")
+        return {
+            "question_type": category,
+            "classified_company": company,
+            "original_question": question,
+            "reformulated_question": question
+        }
+
+    except Exception as e:
+        logger.error(f"[classify_node] failed: {e}")
+        return {
+            "question_type": "general",
+            "classified_company": "none",
+            "original_question": question,
+            "reformulated_question": question
+        }
+
+
+
+
+# Before promt optimisation
+'''
+def classify_node(state) -> dict:
+    _, llm, _, parser = _get_services()
+
+    question = state["question"]
+    logger.info(f"[classify_node] classifying: '{question[:50]}'")
     classify_prompt = ChatPromptTemplate.from_template("""
 Classify this career-related question into exactly one category.
 
@@ -262,7 +314,7 @@ COMPANY: <company name or "none">
             "reformulated_question": question
         }
 
-
+'''
 # -------------------------------------------------------
 # AGENT NODE 3 — JD Retrieve
 # -------------------------------------------------------
