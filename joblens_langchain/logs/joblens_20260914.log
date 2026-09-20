@@ -1,0 +1,169 @@
+2026-09-14 16:55:52,278 | INFO | career_agent_graph | Career agent compiled: routing + memory + self-correction
+2026-09-14 16:55:52,280 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled
+2026-09-14 17:10:28,269 | INFO | career_agent_graph | Career agent compiled: routing + memory + self-correction
+2026-09-14 17:10:28,270 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled
+2026-09-14 21:24:42,151 | INFO | career_agent_graph | Career agent compiled: routing + memory + self-correction
+2026-09-14 21:24:42,152 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled
+2026-09-14 21:25:02,438 | INFO | nodes | [agent_load_history] 0 messages in history
+2026-09-14 21:25:03,051 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2026-09-14 21:25:05,268 | INFO | model | No device provided, using mps
+2026-09-14 21:25:05,606 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:25:05,607 | WARNING | _http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-14 21:25:05,634 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-09-14 21:25:05,875 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:25:05,904 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-09-14 21:25:05,906 | INFO | model | Loading SentenceTransformer model from BAAI/bge-base-en-v1.5.
+2026-09-14 21:25:06,145 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:25:06,172 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-09-14 21:25:06,417 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:25:06,445 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md "HTTP/1.1 200 OK"
+2026-09-14 21:25:06,690 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:25:06,721 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-09-14 21:25:06,968 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:25:06,996 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-09-14 21:25:07,250 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-09-14 21:25:07,546 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:25:07,574 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-09-14 21:25:07,969 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-09-14 21:25:08,263 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-14 21:25:08,520 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-14 21:25:08,879 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-14 21:25:09,186 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:25:09,218 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-14 21:25:09,461 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:25:09,500 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-09-14 21:25:09,765 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:25:09,794 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-09-14 21:25:10,035 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:25:10,066 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-14 21:25:10,317 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-14 21:25:10,612 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-14 21:25:11,028 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:25:11,055 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-09-14 21:25:11,307 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+2026-09-14 21:25:12,605 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2026-09-14 21:25:12,617 | INFO | qdrant_service | Using existing collection: Joblens
+2026-09-14 21:25:12,809 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-09-14 21:25:13,006 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-09-14 21:25:13,203 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-09-14 21:25:13,400 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-09-14 21:25:13,603 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens "HTTP/1.1 200 OK"
+2026-09-14 21:25:13,963 | INFO | qdrant_service | QdrantService initialized using collection 'Joblens'
+2026-09-14 21:25:14,018 | INFO | nodes | [classify_node] classifying: 'What companies do you have information about?'
+2026-09-14 21:25:14,678 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 21:25:14,702 | INFO | nodes | [classify_node] type=general company=none
+2026-09-14 21:25:14,704 | INFO | career_agent_graph | [route_by_type] general → general_retrieve
+2026-09-14 21:25:14,707 | INFO | nodes | [general_retrieve] question='What companies do you have information about?'
+2026-09-14 21:25:15,325 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-09-14 21:25:15,328 | INFO | qdrant_service | Retrieved 5 chunks for query (source: None)
+2026-09-14 21:25:15,985 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 21:25:15,991 | INFO | nodes | [agent_generate] 96 chars | history: 0
+2026-09-14 21:25:15,994 | INFO | nodes | [agent_evaluate] quality=good iteration=0
+2026-09-14 21:25:50,196 | INFO | nodes | [agent_load_history] 2 messages in history
+2026-09-14 21:25:50,198 | INFO | nodes | [classify_node] classifying: 'What does the Sarvam AI role require?'
+2026-09-14 21:25:50,982 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 21:25:50,990 | INFO | nodes | [classify_node] type=jd company=Sarvam AI
+2026-09-14 21:25:50,992 | INFO | career_agent_graph | [route_by_type] jd → jd_retrieve
+2026-09-14 21:25:50,994 | INFO | nodes | [jd_retrieve] company='Sarvam AI' source='Sarvam AI JD'
+2026-09-14 21:25:52,388 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-09-14 21:25:52,390 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Sarvam AI JD)
+2026-09-14 21:25:53,267 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 21:25:53,272 | INFO | nodes | [agent_generate] 452 chars | history: 2
+2026-09-14 21:25:53,276 | INFO | nodes | [agent_evaluate] quality=good iteration=0
+2026-09-14 21:26:10,011 | INFO | nodes | [agent_load_history] 4 messages in history
+2026-09-14 21:26:10,013 | INFO | nodes | [classify_node] classifying: 'Do I have the skills for that? My background is Py'
+2026-09-14 21:26:10,742 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 21:26:10,749 | INFO | nodes | [classify_node] type=resume company=none
+2026-09-14 21:26:10,750 | INFO | career_agent_graph | [route_by_type] resume → resume_retrieve
+2026-09-14 21:26:10,753 | INFO | nodes | [resume_retrieve] question='Do I have the skills for that? My background is Py'
+2026-09-14 21:26:12,035 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-09-14 21:26:12,037 | INFO | qdrant_service | Retrieved 5 chunks for query (source: My Resume)
+2026-09-14 21:26:13,603 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 21:26:13,608 | INFO | nodes | [agent_generate] 1230 chars | history: 4
+2026-09-14 21:29:39,730 | INFO | career_agent_graph | Career agent compiled: routing + memory + self-correction
+2026-09-14 21:29:39,731 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled
+2026-09-14 21:29:41,569 | INFO | nodes | [agent_load_history] 0 messages in history
+2026-09-14 21:29:42,127 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2026-09-14 21:29:44,159 | INFO | model | No device provided, using mps
+2026-09-14 21:29:44,493 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:29:44,495 | WARNING | _http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-14 21:29:44,551 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-09-14 21:29:44,947 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:29:44,973 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-09-14 21:29:44,974 | INFO | model | Loading SentenceTransformer model from BAAI/bge-base-en-v1.5.
+2026-09-14 21:29:45,210 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:29:45,238 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-09-14 21:29:45,478 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:29:45,522 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md "HTTP/1.1 200 OK"
+2026-09-14 21:29:45,775 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:29:45,800 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json "HTTP/1.1 200 OK"
+2026-09-14 21:29:46,048 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:29:46,077 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-09-14 21:29:46,324 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-09-14 21:29:46,588 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:29:46,612 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-09-14 21:29:46,990 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-09-14 21:29:47,304 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-14 21:29:47,610 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-14 21:29:47,917 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-14 21:29:48,163 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:29:48,188 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-14 21:29:48,431 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:29:48,460 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-09-14 21:29:49,011 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:29:49,082 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config.json "HTTP/1.1 200 OK"
+2026-09-14 21:29:49,370 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:29:49,417 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-14 21:29:49,746 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-14 21:29:50,081 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-14 21:29:50,387 | INFO | _client | HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 21:29:50,410 | INFO | _client | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-09-14 21:29:50,667 | INFO | _client | HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+2026-09-14 21:29:51,981 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections "HTTP/1.1 200 OK"
+2026-09-14 21:29:51,987 | INFO | qdrant_service | Using existing collection: Joblens
+2026-09-14 21:29:52,186 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-09-14 21:29:52,381 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-09-14 21:29:52,576 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-09-14 21:29:52,776 | INFO | _client | HTTP Request: PUT https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/index?wait=true "HTTP/1.1 200 OK"
+2026-09-14 21:29:52,942 | INFO | _client | HTTP Request: GET https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens "HTTP/1.1 200 OK"
+2026-09-14 21:29:53,333 | INFO | qdrant_service | QdrantService initialized using collection 'Joblens'
+2026-09-14 21:29:53,391 | INFO | nodes | [classify_node] classifying: 'Do I have the skills for that? My background is Py'
+2026-09-14 21:29:54,071 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 21:29:54,095 | INFO | nodes | [classify_node] type=resume company=none
+2026-09-14 21:29:54,098 | INFO | career_agent_graph | [route_by_type] resume → resume_retrieve
+2026-09-14 21:29:54,103 | INFO | nodes | [resume_retrieve] question='Do I have the skills for that? My background is Py'
+2026-09-14 21:29:54,343 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-09-14 21:29:54,346 | INFO | qdrant_service | Retrieved 5 chunks for query (source: My Resume)
+2026-09-14 21:29:55,596 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 21:29:55,600 | INFO | nodes | [agent_generate] 450 chars | history: 0
+2026-09-14 21:29:55,602 | INFO | nodes | [agent_evaluate] quality=good iteration=0
+2026-09-14 21:30:20,995 | INFO | nodes | [agent_load_history] 2 messages in history
+2026-09-14 21:30:20,997 | INFO | nodes | [classify_node] classifying: 'What should I learn first to close the gap?'
+2026-09-14 21:30:21,612 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 21:30:21,620 | INFO | nodes | [classify_node] type=general company=none
+2026-09-14 21:30:21,621 | INFO | career_agent_graph | [route_by_type] general → general_retrieve
+2026-09-14 21:30:21,623 | INFO | nodes | [general_retrieve] question='What should I learn first to close the gap?'
+2026-09-14 21:30:22,640 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-09-14 21:30:22,644 | INFO | qdrant_service | Retrieved 5 chunks for query (source: None)
+2026-09-14 21:30:25,091 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 21:30:25,098 | INFO | nodes | [agent_generate] 2879 chars | history: 2
+2026-09-14 21:30:25,102 | INFO | nodes | [agent_evaluate] quality=good iteration=0
+2026-09-14 21:30:57,396 | INFO | nodes | [agent_load_history] 0 messages in history
+2026-09-14 21:30:57,399 | INFO | nodes | [classify_node] classifying: 'What does the Freshworks role need?'
+2026-09-14 21:30:58,011 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 21:30:58,017 | INFO | nodes | [classify_node] type=jd company=Freshworks
+2026-09-14 21:30:58,018 | INFO | career_agent_graph | [route_by_type] jd → jd_retrieve
+2026-09-14 21:30:58,021 | INFO | nodes | [jd_retrieve] company='Freshworks' source='Freshworks JD'
+2026-09-14 21:30:59,069 | INFO | _client | HTTP Request: POST https://7a2e277f-2faf-4911-8a54-e503b38c233e.eu-west-2-0.aws.cloud.qdrant.io:6333/collections/Joblens/points/query "HTTP/1.1 200 OK"
+2026-09-14 21:30:59,071 | INFO | qdrant_service | Retrieved 1 chunks for query (source: Freshworks JD)
+2026-09-14 21:30:59,855 | INFO | _client | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 21:30:59,861 | INFO | nodes | [agent_generate] 297 chars | history: 0
+2026-09-14 21:30:59,864 | INFO | nodes | [agent_evaluate] quality=good iteration=0
+2026-09-14 22:18:19,000 | INFO | career_agent_graph | Career agent compiled: routing + memory + self-correction
+2026-09-14 22:18:19,014 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled
+2026-09-14 22:20:43,009 | INFO | career_agent_graph | Career agent compiled: routing + memory + self-correction
+2026-09-14 22:20:43,009 | INFO | career_agent_graph | Career agent compiled: routing + memory + self-correction
+2026-09-14 22:20:43,011 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled
+2026-09-14 22:20:43,011 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled
+2026-09-14 22:36:53,255 | INFO | career_agent_graph | Career agent compiled: routing + memory + self-correction
+2026-09-14 22:36:53,256 | WARNING | langsmith_setup | LANGCHAIN_API_KEY not set — LangSmith tracing disabled

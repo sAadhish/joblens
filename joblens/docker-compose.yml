@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+
+  api:
+
+    build: .
+
+
+    container_name: joblens_api
+
+
+    ports:
+      - "8000:8000"
+
+    env_file:
+      - .env
+
+
+    volumes:
+      - ./logs:/app/logs
+
+    restart: unless-stopped
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s      # check every 30 seconds
+      timeout: 10s       # wait max 10 seconds for response
+      retries: 3         # mark unhealthy after 3 failures
+      start_period: 40s  # wait 40s before first check (startup time)

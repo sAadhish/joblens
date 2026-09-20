@@ -1,0 +1,83 @@
+{
+  "score": 0.692,
+  "results": [
+    {
+      "eval_id": "eval_001",
+      "category": "factual_retrieval",
+      "passed": true,
+      "answer": "The Sarvam AI role requires the following Python frameworks: FastAPI. \n\n[Source: Sarvam AI JD]"
+    },
+    {
+      "eval_id": "eval_002",
+      "category": "factual_retrieval",
+      "passed": true,
+      "answer": "The Sarvam AI role requires 3-6 years of experience. [Source: Sarvam AI JD]"
+    },
+    {
+      "eval_id": "eval_003",
+      "category": "factual_retrieval",
+      "passed": false,
+      "answer": "I don't have enough information to answer that."
+    },
+    {
+      "eval_id": "eval_004",
+      "category": "factual_retrieval",
+      "passed": true,
+      "answer": "The Haptik role mentions RAG Systems as one of the required skills, but it does not explicitly state that experience in RAG is required. It only lists RAG Systems as a technology, similar to other technologies like LangChain and Vector Databases. [Source: Haptik JD]"
+    },
+    {
+      "eval_id": "eval_005",
+      "category": "factual_retrieval",
+      "passed": false,
+      "answer": "I don't have enough information to answer that."
+    },
+    {
+      "eval_id": "eval_006",
+      "category": "grounding_check",
+      "passed": true,
+      "answer": "I don't have enough information to answer that."
+    },
+    {
+      "eval_id": "eval_007",
+      "category": "grounding_check",
+      "passed": true,
+      "answer": "I don't have enough information to answer that."
+    },
+    {
+      "eval_id": "eval_008",
+      "category": "resume_retrieval",
+      "passed": true,
+      "answer": "The candidate has used Qlik Sense Automation as a BI tool, as mentioned in [Source 1: My Resume]. Additionally, they have experience with designing and delivering enterprise BI applications, but the specific tools used for these applications are not mentioned in the provided documents, except for the mention of Snowflake, which is a data warehousing platform, and FastAPI, which is a web framework, but not typically considered a BI tool. Therefore, the only BI tool explicitly mentioned is Qlik Sense Automation."
+    },
+    {
+      "eval_id": "eval_009",
+      "category": "resume_retrieval",
+      "passed": false,
+      "answer": "I don't have enough information to answer that."
+    },
+    {
+      "eval_id": "eval_010",
+      "category": "hard_negative",
+      "passed": true,
+      "answer": "I don't have enough information to answer that."
+    },
+    {
+      "eval_id": "eval_011",
+      "category": "hard_negative",
+      "passed": true,
+      "answer": "I don't have enough information to answer that."
+    },
+    {
+      "eval_id": "eval_012",
+      "category": "hard_negative",
+      "passed": true,
+      "answer": "I don't have enough information to answer that."
+    },
+    {
+      "eval_id": "eval_013",
+      "category": "resume_retrieval",
+      "passed": false,
+      "answer": "I don't have enough information to answer that."
+    }
+  ]
+}

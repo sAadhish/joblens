@@ -1,0 +1,83 @@
+{
+  "score": 0.615,
+  "results": [
+    {
+      "eval_id": "eval_001",
+      "category": "factual_retrieval",
+      "passed": true,
+      "answer": "The Sarvam AI role requires the following Python frameworks: FastAPI. \n\n[Source: Sarvam AI JD]"
+    },
+    {
+      "eval_id": "eval_002",
+      "category": "factual_retrieval",
+      "passed": true,
+      "answer": "The Sarvam AI role requires 3-6 years of experience. [Source: Sarvam AI JD]"
+    },
+    {
+      "eval_id": "eval_003",
+      "category": "factual_retrieval",
+      "passed": false,
+      "answer": "I don't have enough information to answer that."
+    },
+    {
+      "eval_id": "eval_004",
+      "category": "factual_retrieval",
+      "passed": true,
+      "answer": "The Haptik role mentions RAG Systems as one of the required skills, but it does not explicitly state that experience in RAG is required. It only lists RAG Systems as a technology, alongside other technologies such as Vector Databases and FastAPI. [Source: Haptik JD]"
+    },
+    {
+      "eval_id": "eval_005",
+      "category": "factual_retrieval",
+      "passed": false,
+      "answer": "I don't have enough information to answer that."
+    },
+    {
+      "eval_id": "eval_006",
+      "category": "grounding_check",
+      "passed": true,
+      "answer": "I don't have enough information to answer that."
+    },
+    {
+      "eval_id": "eval_007",
+      "category": "grounding_check",
+      "passed": true,
+      "answer": "I don't have enough information to answer that."
+    },
+    {
+      "eval_id": "eval_008",
+      "category": "resume_retrieval",
+      "passed": false,
+      "answer": "I don't have enough information to answer that."
+    },
+    {
+      "eval_id": "eval_009",
+      "category": "resume_retrieval",
+      "passed": false,
+      "answer": "I don't have enough information to answer that."
+    },
+    {
+      "eval_id": "eval_010",
+      "category": "hard_negative",
+      "passed": true,
+      "answer": "I don't have enough information to answer that."
+    },
+    {
+      "eval_id": "eval_011",
+      "category": "hard_negative",
+      "passed": true,
+      "answer": "I don't have enough information to answer that."
+    },
+    {
+      "eval_id": "eval_012",
+      "category": "hard_negative",
+      "passed": true,
+      "answer": "I don't have enough information to answer that."
+    },
+    {
+      "eval_id": "eval_013",
+      "category": "resume_retrieval",
+      "passed": false,
+      "answer": "I don't have enough information to answer that."
+    }
+  ]
+}
