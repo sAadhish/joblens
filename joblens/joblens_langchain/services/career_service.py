@@ -31,6 +31,11 @@ class CareerService:
         chunks = self.ingestion.ingest_text(jd_text, source_label)
         return self.vector.index_chunks(chunks)
 
+    def delete_jd(self, company: str) -> bool:
+        """Delete a job description by company name."""
+        source_label = f"{company} JD"
+        return self.vector.delete_by_source_label(source_label)
+
     def index_resume(self, file_path: str) -> IndexingResult:
         """Index a resume from a PDF file."""
         chunks = self.ingestion.ingest(file_path, "My Resume")

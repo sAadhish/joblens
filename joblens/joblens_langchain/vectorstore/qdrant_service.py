@@ -161,6 +161,26 @@ class QdrantService:
         logger.info(f"Retrieved {len(retrieved)} chunks for query (source: {source_label})")
         return retrieved
 
+    def delete_by_source_label(self, source_label: str) -> bool:
+        try:
+            filter_condition = Filter(
+                must=[
+                    FieldCondition(
+                        key="metadata.source_label",
+                        match=MatchValue(value=source_label)
+                    )
+                ]
+            )
+            self.client.delete(
+                collection_name=Config.QDRANT_COLLECTION,
+                points_selector=filter_condition
+            )
+            logger.info(f"Deleted vectors for source: {source_label}")
+            return True
+        except Exception as e:
+            logger.error(f"Failed to delete vectors for source '{source_label}': {e}")
+            return False
+
 
     def collection_count(self) -> int:
         return self.client.count(collection_name=Config.QDRANT_COLLECTION).count

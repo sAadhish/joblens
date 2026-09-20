@@ -33,6 +33,21 @@ async def index_jd(request: IndexJDRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 
+@router.delete("/index/jd/{company}")
+async def delete_jd(company: str):
+    """Delete a job description by company name."""
+    try:
+        service = get_service()
+        success = service.delete_jd(company)
+        if success:
+            return {"success": True, "message": f"Deleted JD for {company}"}
+        else:
+            raise HTTPException(status_code=500, detail="Failed to delete JD")
+    except Exception as e:
+        logger.error(f"Delete JD failed: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 @router.post("/index/resume", response_model=IndexResponse)
 async def index_resume(file: UploadFile = File(...)):
     """Index a resume PDF by uploading the file."""

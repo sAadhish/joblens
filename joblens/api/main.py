@@ -1,7 +1,10 @@
 import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from api.routes import chat, index, health
 from langsmith_setup import setup_langsmith
 import logging
@@ -10,6 +13,9 @@ from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 from langsmith import Client as LangSmithClient
 
+# Resolve the frontend directory (lives at ../../frontend relative to this file,
+# but we use the absolute path from the joblens/frontend workspace).
+FRONTEND_DIR = Path("/Users/aadhishs/joblens/frontend")
 
 logging.basicConfig(
     level=logging.INFO,
@@ -79,7 +85,19 @@ async def root():
         "name": "JobLens API",
         "version": "1.0.0",
         "docs": "/docs",
-        "health": "/health"
+        "health": "/health",
+        "frontend": "/app/"
     }
 
+# -------------------------------------------------------
+# FRONTEND — serve the static UI at /app/
+# -------------------------------------------------------
 
+@app.get("/app", include_in_schema=False)
+@app.get("/app/", include_in_schema=False)
+async def serve_frontend():
+    """Serve the JobLens frontend SPA."""
+    return FileResponse(FRONTEND_DIR / "index.html")
+
+# Mount static assets (JS, CSS) so the browser can load them
+app.mount("/app", StaticFiles(directory=str(FRONTEND_DIR)), name="frontend")
