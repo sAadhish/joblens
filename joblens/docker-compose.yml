@@ -11,14 +11,19 @@ services:
 
 
     ports:
-      - "8000:8000"
+      - "8081:8000"
 
     env_file:
       - .env
 
+    environment:
+      - FRONTEND_DIR=/app/frontend
+      - PYTHONPATH=/app:/app/joblens_langchain
+
 
     volumes:
       - ./logs:/app/logs
+      - ../../joblens/frontend:/app/frontend
 
     restart: unless-stopped
 
