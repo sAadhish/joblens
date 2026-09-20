@@ -22,15 +22,17 @@ JobLens is an **AI-powered job market intelligence platform** designed to help t
 
 ### The KPI Dashboard
 Monitor your API health, vector database status, and easily remove indexed job descriptions.
-![Dashboard](joblens/assets/dashboard.png)
+<img width="1440" height="774" alt="Screenshot 2026-09-20 at 1 45 03 PM" src="https://github.com/user-attachments/assets/42ba8729-21f8-4b08-9ac7-3d394b0c5909" />
+
 
 ### The Career Assistant Chat
 Interact with the LangGraph agent for personalized career advice based on indexed JDs and Resumes.
-![Career Chat](joblens/assets/chat.png)
+<img width="1440" height="774" alt="Screenshot 2026-09-20 at 1 45 51 PM" src="https://github.com/user-attachments/assets/5097987c-3e9d-48f8-802a-29e531daac73" />
 
 ### Seamless Data Indexing
 Index thousands of chunks into the Qdrant vector database via the UI.
-![Indexing](joblens/assets/indexing.png)
+<img width="1440" height="774" alt="Screenshot 2026-09-20 at 1 45 42 PM" src="https://github.com/user-attachments/assets/7b361c55-789a-4639-985b-13522facf039" />
+
 
 ---
 
