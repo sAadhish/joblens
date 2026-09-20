@@ -1,127 +1,123 @@
-# JobLens — AI Job Market Intelligence Platform
+# 🔎 JobLens
+### AI-Powered Job Market Intelligence & Career Assistant
 
-> Built across a structured 100-day GenAI engineering journey.
-> Two implementations, one project: hand-built RAG and LangChain/LangGraph.
+> **Understand the job market. Identify skill gaps. Improve your resume. Find better opportunities.**
+
+JobLens is an **AI-powered job market intelligence platform** designed to help tech professionals interact with job-market data and resumes using natural language, built using **FastAPI**, **LangGraph**, **LangChain**, and **Qdrant**, with a beautiful **Dockerized Frontend UI**.
 
 ---
 
-## Architecture Overview
+## ✨ Features
 
-┌─────────────────────────────────────────────────────────┐
-│ USER INTERFACES │
-│ CLI (career_assistant.py) │ Claude Desktop (MCP) │
-└──────────────┬──────────────┴────────────┬──────────────┘
-↓ ↓
-┌──────────────────────────┐ ┌────────────────────────────┐
-│ LangGraph Career Agent │ │ MCP Server (FastMCP) │
-│ ├── classify_node │ │ ├── search_jobs tool │
-│ ├── jd_retrieve_node │ │ ├── answer_question tool │
-│ ├── resume_retrieve │ │ ├── check_skill_gap tool │
-│ ├── generate_node │ │ ├── companies resource │
-│ ├── evaluate_node │ │ ├── resume resource │
-│ └── reformulate_node │ │ └── jd/{company} resource│
-└──────────────┬────────────┘ └────────────┬───────────────┘
-└──────────────┬─────────────┘
-↓
-┌─────────────────────────────────────────────────────────┐
-│ RETRIEVAL LAYER │
-│ Qdrant Cloud (Vector DB) │ HuggingFace Embeddings │
-│ LangChain RAG Service │ Cross-encoder Reranking │
-└─────────────────────────────────────────────────────────┘
-↓
-┌─────────────────────────────────────────────────────────┐
-│ GENERATION LAYER │
-│ Groq API (Llama 3.3 70B) │ LangSmith Observability │
-└─────────────────────────────────────────────────────────┘
+- 🔍 **Semantic Job Search**: Query the job market naturally.
+- 📄 **Resume Analysis & Comparison**: Identify missing skills by comparing your resume to job requirements.
+- 🤖 **LangGraph Career Agent**: Multi-step AI reasoning that self-corrects bad retrieval automatically.
+- 🧠 **Persistent Memory**: Conversational memory that remembers context.
+- 📊 **API Dashboard**: A premium KPI dashboard to monitor vector chunks, health, and manage data.
+- 🐳 **Fully Dockerized**: Effortlessly spin up the entire application (API, UI, Vector Store) in one command.
 
+---
 
-## Two Implementations — One Project
+## 📸 Screenshots
 
-| Feature | Hand-built (`joblens/`) | LangChain (`joblens_langchain/`) |
-|---------|------------------------|----------------------------------|
-| RAG Pipeline | Raw libraries | LangChain LCEL |
-| Vector DB | ChromaDB (local) | Qdrant Cloud |
-| Architecture | Functional | OOP (Services) |
-| Evaluation | Custom + RAGAS | RAGAS + LangSmith |
-| Agents | — | LangGraph |
-| Memory | — | Checkpointer |
-| MCP Server | — | FastMCP |
-| Score (RAGAS) | ~78% (with reranking) | 48% (baseline RAG) |
+### The KPI Dashboard
+Monitor your API health, vector database status, and easily remove indexed job descriptions.
+![Dashboard](joblens/assets/dashboard.png)
 
-## Key Engineering Decisions
+### The Career Assistant Chat
+Interact with the LangGraph agent for personalized career advice based on indexed JDs and Resumes.
+![Career Chat](joblens/assets/chat.png)
 
-**Why two implementations?**
-Built hand-built first to understand internals deeply.
-Refactored to LangChain after — can explain exactly what the framework abstracts and what it hides.
+### Seamless Data Indexing
+Index thousands of chunks into the Qdrant vector database via the UI.
+![Indexing](joblens/assets/indexing.png)
 
-**Why Qdrant over ChromaDB in production?**
-Purpose-built vector database with payload indexing, filtering at scale, and cloud hosting.
-ChromaDB is excellent for learning — Qdrant is what production runs.
+---
 
-**Why LangGraph over LangChain AgentExecutor?**
-Full state visibility, debuggable node-by-node, supports conditional routing and loops.
-AgentExecutor is a black box — LangGraph is transparent.
+## 🚀 Getting Started
 
-**Why MCP over a custom API?**
-MCP is a universal standard — one server, any compatible client.
-Claude Desktop, Cursor, Cline, custom agents — all can call JobLens without custom integration code.
+JobLens is extremely easy to run thanks to Docker. The backend FastAPI service and the frontend UI are served together out of the box.
 
-**Why self-correcting RAG?**
-A system that detects its own failures and retries is more reliable than one that returns bad answers silently.
-The evaluate → reformulate → retry loop improves answer quality without user intervention.
+### Prerequisites
+- Docker & Docker Compose
+- API Keys (Groq, HuggingFace, Qdrant - if using Qdrant Cloud)
 
-## Evaluation Results
-
-| Metric | Hand-built RAG | LangChain RAG |
-|--------|---------------|---------------|
-| Hit Rate | 100% | — |
-| MRR | 0.84 | — |
-| RAGAS Overall | ~78% | 48% |
-| Hand-built Eval | 85% | 69% |
-
-The gap: LangChain version lacks cross-encoder reranking and hybrid search.
-These are architectural choices, not framework limitations.
-
-## Setup
-
+### 1. Clone the repository
 ```bash
-git clone https://github.com/sAadhish/joblens
-cd joblens
-
-# Hand-built version
-cd joblens
-pip install -r requirements.txt
-cp .env.example .env  # add your keys
-python main.py
-
-# LangChain version
-cd joblens_langchain
-pip install -r requirements.txt
-cp .env.example .env  # add your keys
-python main.py        # index data
-python career_assistant.py  # run CLI
-
-# MCP Server (for Claude Desktop)
-python mcp_server/server.py
-# See mcp_server/DEMO.md for Claude Desktop setup
+git clone https://github.com/sAadhish/joblens.git
+cd joblens/joblens
 ```
 
-## Tech Stack
+### 2. Configure Environment Variables
+Copy the example environment file and fill in your API keys:
+```bash
+cp .env.example .env
+```
+Ensure you have added your `GROQ_API_KEY` and `QDRANT_API_KEY` to the `.env` file.
 
-LLM : Groq API (Llama 3.3 70B)
-Embeddings : HuggingFace (BAAI/bge-base-en-v1.5)
-Vector DB : Qdrant Cloud + ChromaDB
-Orchestration: LangGraph (StateGraph + Checkpointer)
-Framework : LangChain LCEL + OOP services
-MCP : FastMCP (Claude Desktop integration)
-Evaluation : RAGAS + custom evaluator + LangSmith
-Observability: LangSmith tracing
-Language : Python 3.11+
-Deployment : Docker (Day 101)
+### 3. Run with Docker 🐳
+Launch the entire application in detached mode using Docker Compose:
+```bash
+docker compose up -d
+```
+Docker will automatically download the necessary dependencies, mount the frontend directory, and expose the application.
 
-## Branch Structure
-stage-1-core-genai → LLMs, embeddings, vector DB fundamentals
-stage-2-rag → RAG pipeline, evaluation, hybrid search
-stage-3-langchain → LangChain OOP, Qdrant, RAGAS
-stage-4-langgraph → LangGraph agents, memory, MCP server
-mcp → MCP server with Claude Desktop integration
+### 4. Access the App
+Once the container is up and running, simply open your browser to:
+👉 **[http://localhost:8081/app/](http://localhost:8081/app/)**
+
+To stop the application, run:
+```bash
+docker compose down
+```
+
+---
+
+## 🏗️ Architecture
+
+JobLens is built on a modern AI stack:
+
+- **Frontend**: Vanilla JS/HTML/CSS with glassmorphism UI served statically.
+- **API**: FastAPI providing high-performance async endpoints.
+- **Agent Orchestration**: LangGraph (for multi-step reasoning, tool usage, and self-correction).
+- **RAG & Embeddings**: LangChain with HuggingFace `bge-base-en-v1.5` embeddings.
+- **Vector Database**: Qdrant Cloud for payload filtering and similarity search.
+- **LLM**: Llama-3.3-70B via Groq API for lightning-fast inference.
+- **Observability**: LangSmith integrated out-of-the-box.
+
+```text
+ ┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐
+ │                 │       │                 │       │                 │
+ │   Frontend UI   ├──────►│   FastAPI App   ├──────►│ LangGraph Agent │
+ │                 │       │                 │       │                 │
+ └─────────────────┘       └─────────────────┘       └────────┬────────┘
+                                                              │
+                                                     ┌────────▼────────┐
+                                                     │                 │
+                                                     │ Qdrant VectorDB │
+                                                     │                 │
+                                                     └─────────────────┘
+```
+
+---
+
+## 🛠️ Development & Manual Run
+
+If you want to run the application locally without Docker (e.g. for development):
+
+1. **Activate your virtual environment**:
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+2. **Run the Uvicorn Server**:
+Make sure you include the PYTHONPATH so imports resolve correctly:
+```bash
+PYTHONPATH="$(pwd):$(pwd)/joblens_langchain" uvicorn api.main:app --host 127.0.0.1 --port 8080 --reload
+```
+You can then access the app at `http://127.0.0.1:8080/app/`.
+
+---
+*Built with curiosity, iteration, and a lot of debugging. 🚀*
