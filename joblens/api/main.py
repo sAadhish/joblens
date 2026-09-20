@@ -15,7 +15,7 @@ from langsmith import Client as LangSmithClient
 
 # Resolve the frontend directory (lives at ../../frontend relative to this file,
 # but we use the absolute path from the joblens/frontend workspace).
-FRONTEND_DIR = Path("/Users/aadhishs/joblens/frontend")
+FRONTEND_DIR = Path(os.getenv("FRONTEND_DIR", "/Users/aadhishs/joblens/frontend"))
 
 logging.basicConfig(
     level=logging.INFO,
