@@ -5,6 +5,8 @@
 
 JobLens is an **AI-powered job market intelligence platform** designed to help tech professionals interact with job-market data and resumes using natural language, built using **FastAPI**, **LangGraph**, **LangChain**, and **Qdrant**, with a beautiful **Dockerized Frontend UI**.
 
+🔗 **Live Demo**: _Coming soon — URL will be added after deployment_
+
 ---
 
 ## ✨ Features
@@ -34,13 +36,51 @@ Index thousands of chunks into the Qdrant vector database via the UI.
 
 ---
 
-## 🚀 Getting Started
+## 🏗️ Architecture
 
-JobLens is extremely easy to run thanks to Docker. The backend FastAPI service and the frontend UI are served together out of the box.
+### Deployed Architecture
+
+```text
+                ┌──────────────────┐
+                │     Recruiter    │
+                └────────┬─────────┘
+                         ↓
+                ┌──────────────────┐
+                │  JobLens Web UI  │
+                │   (Vercel)       │
+                └────────┬─────────┘
+                         ↓ HTTPS
+                ┌──────────────────┐
+                │ FastAPI Backend  │
+                │   (Render)       │
+                └──────┬─────┬─────┘
+                       ↓     ↓
+                 ┌───────┐ ┌───────┐
+                 │Qdrant │ │ Groq  │
+                 │ Cloud │ │  LLM  │
+                 └───────┘ └───────┘
+```
+
+### Technology Stack
+
+| Layer              | Technology                                  |
+|--------------------|---------------------------------------------|
+| **Frontend**       | Vanilla JS/HTML/CSS with glassmorphism UI   |
+| **API**            | FastAPI (async, high-performance)            |
+| **Agent**          | LangGraph (multi-step reasoning, self-correction) |
+| **RAG**            | LangChain + HuggingFace `bge-base-en-v1.5` |
+| **Vector DB**      | Qdrant Cloud                                |
+| **LLM**            | Groq API (fast inference)                   |
+| **Observability**  | LangSmith tracing                           |
+| **Hosting**        | Render (backend) + Vercel (frontend)        |
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
 - Docker & Docker Compose
-- API Keys (Groq, HuggingFace, Qdrant - if using Qdrant Cloud)
+- API Keys (Groq, Qdrant Cloud)
 
 ### 1. Clone the repository
 ```bash
@@ -53,71 +93,79 @@ Copy the example environment file and fill in your API keys:
 ```bash
 cp .env.example .env
 ```
-Ensure you have added your `GROQ_API_KEY` and `QDRANT_API_KEY` to the `.env` file.
+
+Required variables:
+| Variable             | Description                           | Required |
+|----------------------|---------------------------------------|----------|
+| `GROQ_API_KEY`       | Groq API key for LLM inference        | ✅        |
+| `QDRANT_URL`         | Qdrant Cloud cluster URL              | ✅        |
+| `QDRANT_API_KEY`     | Qdrant Cloud API key                  | ✅        |
+| `QDRANT_COLLECTION`  | Qdrant collection name                | ✅        |
+| `LANGSMITH_API_KEY`  | LangSmith API key (for tracing)       | Optional |
+| `LANGSMITH_PROJECT`  | LangSmith project name                | Optional |
+| `LANGSMITH_TRACING`  | Enable/disable LangSmith tracing      | Optional |
+| `FRONTEND_URL`       | Deployed frontend URL (for CORS)      | Optional |
 
 ### 3. Run with Docker 🐳
-Launch the entire application in detached mode using Docker Compose:
 ```bash
 docker compose up -d
 ```
-Docker will automatically download the necessary dependencies, mount the frontend directory, and expose the application.
 
 ### 4. Access the App
-Once the container is up and running, simply open your browser to:
-👉 **[http://localhost:8081/app/](http://localhost:8081/app/)**
+Once the container is up: 👉 **[http://localhost:8081/app/](http://localhost:8081/app/)**
 
-To stop the application, run:
-```bash
-docker compose down
-```
+To stop: `docker compose down`
 
 ---
 
-## 🏗️ Architecture
+## 🛠️ Local Development (without Docker)
 
-JobLens is built on a modern AI stack:
-
-- **Frontend**: Vanilla JS/HTML/CSS with glassmorphism UI served statically.
-- **API**: FastAPI providing high-performance async endpoints.
-- **Agent Orchestration**: LangGraph (for multi-step reasoning, tool usage, and self-correction).
-- **RAG & Embeddings**: LangChain with HuggingFace `bge-base-en-v1.5` embeddings.
-- **Vector Database**: Qdrant Cloud for payload filtering and similarity search.
-- **LLM**: Llama-3.3-70B via Groq API for lightning-fast inference.
-- **Observability**: LangSmith integrated out-of-the-box.
-
-```text
- ┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐
- │                 │       │                 │       │                 │
- │   Frontend UI   ├──────►│   FastAPI App   ├──────►│ LangGraph Agent │
- │                 │       │                 │       │                 │
- └─────────────────┘       └─────────────────┘       └────────┬────────┘
-                                                              │
-                                                     ┌────────▼────────┐
-                                                     │                 │
-                                                     │ Qdrant VectorDB │
-                                                     │                 │
-                                                     └─────────────────┘
-```
-
----
-
-## 🛠️ Development & Manual Run
-
-If you want to run the application locally without Docker (e.g. for development):
-
-1. **Activate your virtual environment**:
 ```bash
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-```
 
-2. **Run the Uvicorn Server**:
-Make sure you include the PYTHONPATH so imports resolve correctly:
-```bash
 PYTHONPATH="$(pwd):$(pwd)/joblens_langchain" uvicorn api.main:app --host 127.0.0.1 --port 8080 --reload
 ```
-You can then access the app at `http://127.0.0.1:8080/app/`.
+
+Access the app at `http://127.0.0.1:8080/app/`
 
 ---
+
+## 📖 API Documentation
+
+Once running, interactive API docs are available at:
+- **Swagger UI**: `/docs`
+- **ReDoc**: `/redoc`
+
+### Endpoints
+
+| Method   | Path                    | Description                      |
+|----------|-------------------------|----------------------------------|
+| `GET`    | `/`                     | API info and links               |
+| `GET`    | `/health`               | Health check + Qdrant status     |
+| `GET`    | `/companies`            | List indexed companies           |
+| `GET`    | `/prompts`              | View deployed prompt versions    |
+| `POST`   | `/chat`                 | Career chat (main endpoint)      |
+| `POST`   | `/index/jd`             | Index a job description          |
+| `POST`   | `/index/resume`         | Upload and index a resume PDF    |
+| `DELETE` | `/index/jd/{company}`   | Remove a company's JD            |
+
+---
+
+## 🌐 Deployment
+
+### Backend → Render (Free Tier)
+The backend deploys as a Docker container on Render's free web service. The `render.yaml` Blueprint automates the setup.
+
+### Frontend → Vercel (Hobby Tier)
+The static frontend deploys to Vercel. Set `window.JOBLENS_API_URL` in `frontend/config.js` to your Render backend URL.
+
+### ⚠️ Free-Tier Limitations
+- **Cold starts**: Render free-tier services sleep after 15 minutes of inactivity. First request after sleep takes ~30-60 seconds. The UI displays a friendly "starting up" message during this time.
+- **Memory**: Free tier has limited RAM. The HuggingFace embedding model loads on first request.
+- **Rate limits**: Groq API has rate limits on the free tier. Heavy usage may hit these limits.
+
+---
+
 *Built with curiosity, iteration, and a lot of debugging. 🚀*

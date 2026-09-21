@@ -2,6 +2,7 @@
 venv/
 .env
 *.env
+.env.local
 
 # API Keys — never commit these
 config.py
@@ -34,4 +35,4 @@ chroma_db/
 Backup/
 
 #vscode
-.vscode
+.vscodejoblens_langchain/logs/
