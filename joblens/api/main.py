@@ -15,7 +15,7 @@ from langsmith import Client as LangSmithClient
 
 # Resolve the frontend directory (lives at ../../frontend relative to this file,
 # but we use the absolute path from the joblens/frontend workspace).
-FRONTEND_DIR = Path(os.getenv("FRONTEND_DIR", "/Users/aadhishs/joblens/frontend"))
+FRONTEND_DIR = Path(os.getenv("FRONTEND_DIR", "/app/frontend"))
 
 logging.basicConfig(
     level=logging.INFO,
@@ -68,9 +68,14 @@ version="1.0.0",
 lifespan=lifespan
 )
 
+# CORS — use FRONTEND_URL for production, fallback to wildcard for local dev
+_frontend_url = os.getenv("FRONTEND_URL", "")
+_origins = [_frontend_url] if _frontend_url else ["*"]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=_origins,
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"]
 )

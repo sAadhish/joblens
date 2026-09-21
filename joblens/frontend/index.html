@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111c35" />
+    <meta name="description" content="JobLens — AI-powered career intelligence platform. Ask questions about resumes, job descriptions, companies, and skill gaps." />
+    <title>JobLens — Career intelligence, clearly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#chat" aria-label="JobLens home">
+          <span class="brand-mark">JL</span>
+          <span>Job<span>Lens</span></span>
+        </a>
+        <button class="new-chat" id="new-chat"><span>＋</span> New conversation</button>
+        <nav class="nav" aria-label="Main navigation">
+          <a class="nav-link active" href="#chat" data-view="chat"><span>◈</span> Career chat</a>
+          <a class="nav-link" href="#knowledge" data-view="knowledge"><span>▱</span> Knowledge hub</a>
+          <a class="nav-link" href="#dashboard" data-view="dashboard"><span>⬡</span> API dashboard</a>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="api-status" id="api-status"><i></i><span>Checking API…</span></div>
+          <p>Built for better career decisions.</p>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <button class="menu-button" id="menu-button" aria-label="Toggle menu">☰</button>
+          <div>
+            <p class="eyebrow">YOUR CAREER COPILOT</p>
+            <h1 id="page-title">Career chat</h1>
+          </div>
+          <button class="icon-button" id="reset-button" title="Start a new conversation" aria-label="Start a new conversation">↻</button>
+        </header>
+
+        <section class="view active-view" id="chat-view">
+          <div class="chat-layout">
+            <section class="conversation" aria-live="polite">
+              <div class="welcome" id="welcome">
+                <div class="orb">✦</div>
+                <p class="eyebrow">WELCOME TO JOBLENS</p>
+                <h2>See your next move<br />with more clarity.</h2>
+                <p class="welcome-copy">Ask about roles, companies, skills, or how your experience can take you further. JobLens turns the job market into a clearer path forward.</p>
+                <div class="suggestions">
+                  <button class="suggestion">What skills do I have?</button>
+                  <button class="suggestion">What skills are required for Sarvam AI?</button>
+                  <button class="suggestion">What does Sarvam AI do?</button>
+                  <button class="suggestion">Compare my skills with this job description.</button>
+                </div>
+              </div>
+              <div class="messages" id="messages"></div>
+            </section>
+            <aside class="insight-panel">
+              <div class="panel-label">HOW JOBLENS HELPS</div>
+              <div class="feature"><span class="feature-icon">⌁</span><div><strong>Market-aware answers</strong><p>Grounded in the job descriptions you add.</p></div></div>
+              <div class="feature"><span class="feature-icon">◌</span><div><strong>Thoughtful follow-ups</strong><p>Your conversation context stays in view.</p></div></div>
+              <div class="feature"><span class="feature-icon">↗</span><div><strong>Actionable direction</strong><p>Move from uncertainty to practical next steps.</p></div></div>
+              <div class="session-card"><span>SESSION</span><code id="session-id"></code></div>
+            </aside>
+          </div>
+          <form class="composer" id="chat-form">
+            <textarea id="message-input" rows="1" maxlength="1000" placeholder="Ask anything about your career…" aria-label="Your career question"></textarea>
+            <button class="send-button" type="submit" aria-label="Send message">↑</button>
+            <p>JobLens may make mistakes. Verify important career decisions.</p>
+          </form>
+        </section>
+
+        <section class="view" id="knowledge-view">
+          <div class="knowledge-intro">
+            <p class="eyebrow">KNOWLEDGE HUB</p>
+            <h2>Make your intelligence<br />more useful.</h2>
+            <p>Upload a resume to tailor conversations, or add job descriptions to help JobLens understand the opportunities you care about.</p>
+          </div>
+          <div class="knowledge-grid">
+            <form class="knowledge-card" id="resume-form">
+              <div class="card-icon">↥</div><span class="card-kicker">YOUR PROFILE</span><h3>Upload your resume</h3><p>PDF only. Its experience and skills will inform your conversations.</p>
+              <label class="file-drop" for="resume-file"><span id="file-label">Choose a PDF</span><small>or drag and drop</small></label>
+              <input id="resume-file" type="file" accept="application/pdf,.pdf" hidden />
+              <button class="primary-button" type="submit">Add resume</button>
+            </form>
+            <form class="knowledge-card jd-card" id="jd-form">
+              <div class="card-icon">＋</div><span class="card-kicker">MARKET INTELLIGENCE</span><h3>Add a job description</h3><p>Bring a role into JobLens’s knowledge base for sharper company and role answers.</p>
+              <label>Company <input id="company-input" required maxlength="100" placeholder="e.g. Sarvam AI" /></label>
+              <label>Job description <textarea id="jd-input" required minlength="10" maxlength="10000" placeholder="Paste the role description here…"></textarea></label>
+              <button class="primary-button" type="submit">Index job description</button>
+            </form>
+          </div>
+          <section class="companies-section"><div><span class="panel-label">CURRENTLY INDEXED</span><h3>Companies in your workspace</h3></div><div class="company-list" id="company-list"><span class="muted">Loading companies…</span></div></section>
+        </section>
+
+        <section class="view" id="dashboard-view">
+          <div class="knowledge-intro">
+            <p class="eyebrow">API DASHBOARD</p>
+            <h2>Explore your<br />API endpoints.</h2>
+            <p>Test and monitor every JobLens API endpoint in one place.</p>
+          </div>
+
+          <div class="kpi-grid">
+            <div class="kpi-card kpi-status">
+              <div class="kpi-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg></div>
+              <div class="kpi-content">
+                <span class="kpi-label">API STATUS</span>
+                <div class="kpi-value" id="kpi-health-status">Checking...</div>
+                <p class="kpi-sub">Qdrant connection</p>
+              </div>
+            </div>
+            <div class="kpi-card kpi-vectors">
+              <div class="kpi-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></div>
+              <div class="kpi-content">
+                <span class="kpi-label">TOTAL VECTORS</span>
+                <div class="kpi-value" id="kpi-total-vectors">-</div>
+                <p class="kpi-sub">Knowledge chunks indexed</p>
+              </div>
+            </div>
+            <div class="kpi-card kpi-companies">
+              <div class="kpi-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg></div>
+              <div class="kpi-content">
+                <span class="kpi-label">COMPANIES</span>
+                <div class="kpi-value" id="kpi-total-companies">-</div>
+                <p class="kpi-sub">Unique JDs in workspace</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-grid">
+            <div class="endpoint-card">
+              <div class="endpoint-header"><span class="method-badge get">GET</span><code>/prompts</code></div>
+              <p>View all prompt versions currently deployed in the system.</p>
+              <button class="primary-button" id="btn-prompts">Load Prompts</button>
+              <pre class="endpoint-response" id="res-prompts"></pre>
+            </div>
+            
+            <div class="endpoint-card">
+              <div class="endpoint-header"><span class="method-badge delete">DELETE</span><code>/index/jd/{company}</code></div>
+              <p>Remove a job description from the vector knowledge base.</p>
+              <form id="dash-delete-form">
+                <label>Company Name <input id="dash-delete-company" required maxlength="100" placeholder="e.g. Google" /></label>
+                <button class="primary-button danger" type="submit">Delete JD</button>
+              </form>
+              <pre class="endpoint-response" id="res-delete"></pre>
+            </div>
+
+            <div class="endpoint-card span-full">
+              <div class="endpoint-header"><span class="method-badge post">POST</span><code>/index/jd</code></div>
+              <p>Index a job description into the vector knowledge base.</p>
+              <form id="dash-jd-form">
+                <label>Company <input id="dash-company" required maxlength="100" placeholder="e.g. Sarvam AI" /></label>
+                <label>Job description <textarea id="dash-jd" required minlength="10" maxlength="10000" placeholder="Paste the role description…"></textarea></label>
+                <button class="primary-button" type="submit">Index JD</button>
+              </form>
+              <pre class="endpoint-response" id="res-jd"></pre>
+            </div>
+
+            <div class="endpoint-card span-full">
+              <div class="endpoint-header"><span class="method-badge post">POST</span><code>/index/resume</code></div>
+              <p>Upload and index a resume PDF into the knowledge base.</p>
+              <form id="dash-resume-form">
+                <label class="file-drop" for="dash-resume-file"><span id="dash-file-label">Choose a PDF</span><small>or drag and drop</small></label>
+                <input id="dash-resume-file" type="file" accept="application/pdf,.pdf" hidden />
+                <button class="primary-button" type="submit">Upload Resume</button>
+              </form>
+              <pre class="endpoint-response" id="res-resume"></pre>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status"></div>
+    <div class="cold-start-overlay" id="cold-start" hidden>
+      <div class="cold-start-card">
+        <div class="cold-start-spinner"></div>
+        <h3>JobLens is starting up…</h3>
+        <p>This demo runs on a free server that sleeps after inactivity.<br />It usually takes 30–60 seconds. Hang tight!</p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked@15/lib/marked.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

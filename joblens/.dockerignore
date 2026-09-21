@@ -8,6 +8,7 @@ venv/
 env/
 
 .env
+*.env
 
 *.log
 logs/
@@ -18,3 +19,14 @@ chroma_db/
 .gitignore
 
 tests/
+
+# Frontend dev files
+frontend/__pycache__/
+frontend/server.py
+
+# Assets (screenshots for README)
+assets/
+
+# Render/Vercel configs (not needed inside image)
+render.yaml
+.env.example

@@ -7,3 +7,5 @@ __pycache__/
 logs/
 *.log
 eval_results/
+frontend/__pycache__/
+frontend/server.py
