@@ -21,7 +21,10 @@ def get_service():
 async def health_check():
     try:
         client = QdrantClient(url=Config.QDRANT_URL, api_key=Config.QDRANT_API_KEY)
-        count = client.count( collection_name=Config.QDRANT_COLLECTION).count
+        try:
+            count = client.count(collection_name=Config.QDRANT_COLLECTION).count
+        except Exception:
+            count = 0
         cache_stats = response_cache.stats()
         logger.info(f"Cache stats: {cache_stats}")
         return HealthResponse(
