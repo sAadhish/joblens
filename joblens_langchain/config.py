@@ -8,13 +8,13 @@ class Config:
     LLM_TEMPERATURE: float = 0.0
 
     # Embeddings
-    EMBEDDING_MODEL: str ="BAAI/bge-base-en-v1.5"
-    EMBEDDING_DIMENSION: int = 768
+    EMBEDDING_MODEL: str ="all-MiniLM-L6-v2"
+    EMBEDDING_DIMENSION: int = 384
 
     # Qdrant
     QDRANT_URL: str = os.getenv("QDRANT_URL", "")
     QDRANT_API_KEY: str = os.getenv("QDRANT_API_KEY", "")
-    QDRANT_COLLECTION: str = os.getenv("QDRANT_COLLECTION", "joblens")
+    QDRANT_COLLECTION: str = os.getenv("QDRANT_COLLECTION", "joblens_lite")
 
     # Chunking
     CHUNK_SIZE: int = 800
