@@ -39,15 +39,22 @@ class QdrantService:
         existing=[c.name for c in collections]
 
         if Config.QDRANT_COLLECTION not in existing:
-
-            self.client.create_collection(
-                collection_name=Config.QDRANT_COLLECTION,
-                vectors_config=VectorParams(
-                size=Config.EMBEDDING_DIMENSION,
-                distance=Distance.COSINE
+            try:
+                self.client.create_collection(
+                    collection_name=Config.QDRANT_COLLECTION,
+                    vectors_config=VectorParams(
+                    size=Config.EMBEDDING_DIMENSION,
+                    distance=Distance.COSINE
+                    )
                 )
-            )
-            logger.info(f"Created collection: {Config.QDRANT_COLLECTION}")
+                logger.info(f"Created collection: {Config.QDRANT_COLLECTION}")
+            except Exception as e:
+                logger.error(f"Failed to create collection {Config.QDRANT_COLLECTION}: {e}")
+                # Fallback to existing collection if creating one fails (due to Qdrant free tier limits)
+                if "joblens" in existing:
+                    Config.QDRANT_COLLECTION = "joblens"
+                elif "Joblens" in existing:
+                    Config.QDRANT_COLLECTION = "Joblens"
         else:
             logger.info(f"Using existing collection: {Config.QDRANT_COLLECTION}")
 
