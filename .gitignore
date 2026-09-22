@@ -5,8 +5,7 @@ venv/
 .env.local
 
 # API Keys — never commit these
-config.py
-secrets.py
+# (removed config.py and secrets.py as they block actual app modules)
 
 # Python
 __pycache__/
